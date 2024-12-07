@@ -6,6 +6,8 @@
     text-decoration: none;
 }
 
+/* Styling af Navbar */
+
 header{
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -18,10 +20,12 @@ header{
     z-index: 1000;
 }
 
-header .logo{
+/* HJÆLP med indsæt logo img! */
+header .logo /* img */{
     font-weight: bolder;
     font-size: 25px;
     color: #101110;
+    /* width: 100%; */
 }
 
 header .navbar ul{
