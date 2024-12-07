@@ -4,13 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landingpage</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navStyle.css">
+
 </head>
+
 <body>
 
+    <!-- Mit forsøg på responsiv navbar -->
+    <header>
+        <a href="#" class="logo">LOGO</a>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Pages +</a>
+                    <ul class="sub">
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Review</a></li>
+                <li><a href="#">Gallery +</a>
+                    <ul class="sub">
+                        <li><a href="#">Grid gallery</a></li>
+                        <li><a href="#">Flex Gallery</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
 
 
+    </header>
 
     
     <script src="../js/script.js"></script>
 </body>
+
 </html>
