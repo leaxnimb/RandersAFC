@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+/* indsæt font */
+h1 {
+    font-family: x;
+    font-size: xx-large;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+/* landing page styling */
+
+/* forside billede */
+.frontpic img {
+    width: 100%;
+}
+
+
+/* logo section i flex */
+#flogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* logo img */
+#flogo img{
+    width: 20rem;
+    padding-bottom: 5rem;
+}
+
+
+/* tekst margin */
+
+.tekst{
+    margin-left: 13.5rem;
+    margin-right: 13.5rem;
+    line-height: 2;
+}
+
+/* h1 */
+section#welcome{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+/* tekstafsnit */
+#tekstp{
+    margin-top: 4rem;
+    font-weight: bold;
+}
+
+
+/* 'polarid spiller billeder' */
+.flexspiller{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    padding-top: 5rem;
+}
+
+
+div.polaroid {
+    width: 25rem;
+    background-color: #F4BD37;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    padding: 1rem;
+  }
+  
+  div.container {
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+  .container h2{
+    font-size: larger;
+  }
+
+  /* styling af tekstbokse section */
+  .tekstbokse{
+    margin-left: 13.5rem;
+    margin-right: 13.5rem;
+    line-height: 2;
+    padding-bottom: 4rem;
+  }
+
+  #oeverst{
+    padding-top: 5rem;
+  }
+
+  .tekstbokse .tykp{
+    font-weight: bold;
+  }
+
