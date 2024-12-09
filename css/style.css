@@ -129,7 +129,6 @@ div.polaroid {
     font-weight: bold;
   }
 
-
   @media(max-width:991px){
 
     .tekst{
@@ -157,3 +156,9 @@ div.polaroid {
     }
 
   }
+
+/*Senior*/
+
+.senior-hero {
+width: 50px;
+}
