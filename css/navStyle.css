@@ -81,6 +81,7 @@ header label{
 /* skærmstørrelse */
 
 @media(max-width:991px){
+    /* responsiv navbar */
     header{
         padding: 20px;
     }
