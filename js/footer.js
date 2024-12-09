@@ -16,6 +16,7 @@ window.onload = function() {
             const logoImg = document.createElement('img');
             logoImg.src = data.logo; 
             logoImg.alt = 'Logo';
+            
             // Der sættes til størrelse for loget.
             logoImg.style.height = '5%'; 
 
