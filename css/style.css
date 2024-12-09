@@ -35,6 +35,7 @@ p {
 /* logo img */
 #flogo img{
     width: 20rem;
+    padding-top: 5rem;
     padding-bottom: 5rem;
 }
 
@@ -48,11 +49,32 @@ p {
 }
 
 /* h1 */
-section#welcome{
-    display: flex;
-    justify-content: center;
-    padding-top: 2rem;
-    padding-bottom: 4rem;
+.decorated-text {
+    text-align: center;
+    position: relative;
+    font-size: 24px; /* Tekststørrelse */
+    font-weight: bold; /* Gør teksten fed */
+    color: black; /* Tekstfarve */
+    margin: 20px 0; /* Afstand til andre elementer */
+    padding: 20px ; /* Plads omkring teksten */
+}
+
+.decorated-text::before,
+.decorated-text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px; /* Tykkelse på linjerne */
+    background-color: gold; /* Gul farve på linjerne */
+}
+
+.decorated-text::before {
+    top: 0; /* Øverste linje */
+}
+
+.decorated-text::after {
+    bottom: 0; /* Nederste linje */
 }
 
 /* tekstafsnit */
@@ -86,8 +108,9 @@ div.polaroid {
     padding: 10px 20px;
   }
 
-  .container h2{
+  .container p{
     font-size: larger;
+    font-weight: bold;
   }
 
   /* styling af tekstbokse section */
@@ -106,3 +129,36 @@ div.polaroid {
     font-weight: bold;
   }
 
+  @media(max-width:991px){
+
+    .tekst{
+        margin-left: 7rem;
+        margin-right: 7rem;
+        line-height: 2;
+    }
+
+    .tekstbokse{
+        margin-left: 7rem;
+        margin-right: 7rem;
+        line-height: 2;
+    }
+
+    #flogo img{
+        width: 20rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .flexspiller{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+  }
+
+/*Senior*/
+
+.senior-hero {
+width: 50px;
+}
