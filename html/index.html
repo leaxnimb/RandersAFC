@@ -62,13 +62,18 @@
         </nav>
     </header>
 
-        <main>
+    <main>
 
             <section class="frontpic">
                 <img  src="../img/forside.jpg" alt="amerikansk fodbold spillere">
             </section>
 
             <h1 class="decorated-text">Velkommen til Randers American Football</h1>
+
+            <!-- Scroll to top knap -->
+           <!--  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
+
+            <img src="../img/icons/hand.webp" alt="skumfinger" onclick="topFunction()" id="myBtn" title="Go to top">
 
             <section>
                 <div id="flogo">
@@ -90,7 +95,13 @@
 
                 <aside class="flexspiller">
                     <div class="polaroid">
-                        <img src="../img/junior.jpg" alt="junior" style="width:100%">
+                        
+                        <div class="imgcontainer">
+                            <img src="../img/junior.jpg" alt="junior" style="width:100%">
+                                                        <!-- js indsat til link til side -->
+                            <button class="spillerbtn" onclick="window.location.href='junior.html';">Junior</button>
+                        </div>
+
                         <div class="container">
                             <p>Randers Thunder</p>
                             <p>10-20 år</p>
@@ -98,7 +109,13 @@
                     </div>
                   
                     <div class="polaroid">
-                        <img src="../img/senior.jpg" alt="senior" style="width:100%">
+
+                        <div class="imgcontainer">
+                            <img src="../img/senior.jpg" alt="junior" style="width:100%">
+                                                         <!-- js indsat til link til side -->
+                            <button class="spillerbtn" onclick="window.location.href='senior.html';">Senior</button>
+                        </div>
+
                         <div class="container">
                             <p>Randers Rednex</p>
                             <p>18+</p>
@@ -165,17 +182,14 @@
             <!-- api halløj -->
 
            </aside>
-
-
-
-
-        </main>
-    </header>
+    </main>
+    
     <footer id="footer"></footer>
 
 
     <script src="../js/footer.js"></script>   
     <script src="../js/script.js"></script>
+    <script src="../js/topbtn.js"></script>
 </body>
 
 </html>
