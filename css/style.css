@@ -39,6 +39,21 @@ p {
     padding-bottom: 5rem;
 }
 
+/* scroll to top btn */
+
+#myBtn {
+    display: none; /* Gemt by default */
+    width: 2rem;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 3rem; 
+    right: 6rem; 
+    z-index: 99; /* Justeres til front lag */
+    cursor: pointer; /* Makør ved hover */
+  }
+  
+ /*  #myBtn:hover */
+  
+
 
 /* tekst margin */
 
@@ -113,6 +128,39 @@ div.polaroid {
     font-weight: bold;
   }
 
+  /* btn på billede */
+
+  .imgcontainer {
+    position: relative;
+  }
+  
+  /* Make the image responsive */
+  .imgcontainer img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Style the button and place it in the middle of the container/image */
+  .imgcontainer .spillerbtn {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #101110b6;
+    color: white;
+    font-size: 20px;
+    padding: 12px 50px;
+    border-color: #F4BD37;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  
+  .imgcontainer .spillerbtn:hover {
+    background-color: black;
+  }
+
+
   /* styling af tekstbokse section */
   .tekstbokse{
     margin-left: 13.5rem;
@@ -153,6 +201,11 @@ div.polaroid {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+    }
+
+    #myBtn{
+        display: none;
+
     }
 
   }
