@@ -1,0 +1,41 @@
+.junior-head img {
+    width: 100%;
+    }
+    
+    h1 {
+        font-family: x;
+        font-size: xx-large;
+    }
+    
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: larger;
+    }
+    
+    .decorated-junior {
+        text-align: center;
+        position: relative;
+        font-size: 24px; /* Tekststørrelse */
+        font-weight: bold; /* Gør teksten fed */
+        color: black; /* Tekstfarve */
+        margin: 20px 0; /* Afstand til andre elementer */
+        padding: 20px ; /* Plads omkring teksten */
+    }
+    
+    .decorated-junior::before,
+    .decorated-junior::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 2px; /* Tykkelse på linjerne */
+        background-color: gold; /* Gul farve på linjerne */
+    }
+    
+    .decorated-junior::before {
+        top: 0; /* Øverste linje */
+    }
+    
+    .decorated-junior::after {
+        bottom: 0; /* Nederste linje */
+    }

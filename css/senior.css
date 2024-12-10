@@ -94,6 +94,58 @@ div.names {
     gap: 1.5rem;
 }
 
+.klar {
+    font-size: medium;
+    font-weight:bold
+}
+
+.skridtet {
+    font-size: medium;
+    font-weight: lighter;
+}
+
+/* Tilmeldingssektion */
+.cta h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.btn-tilmelding {
+    background-color: #888;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-tilmelding:hover {
+    background-color: #666;
+}
+
+.fang {
+    font-size: medium;
+    font-weight: bolder;
+}
+
+.fang::after {
+    content: "";
+    display: block;
+    width: 50%; /* Gør linjen kortere eller længere */
+    height: 4px; /* Tykkelse af stregen */
+    background-color: #ffcc33; /* Gul farve */
+    margin: 0 auto; /* Centrer linjen */
+    margin-top: 8px;
+}
+
 /*
 .card {
     background-color: #fff;
