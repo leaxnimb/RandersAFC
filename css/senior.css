@@ -40,7 +40,7 @@ p {
     bottom: 0; /* Nederste linje */
 }
 
-.intro {
+.intro { /*tjek efter om det er senior-info*/
     padding: 2rem;
     text-align: center;
     background-color: #fff;
@@ -88,7 +88,7 @@ div.names {
   }
 
 
-.trainer-cards {
+.trainer-cards img {
     display: flex;
     justify-content: center;
     gap: 1.5rem;

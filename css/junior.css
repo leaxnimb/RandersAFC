@@ -88,7 +88,7 @@
       }
     
     
-    .coach-card {
+    .coach-card img {
         display: flex;
         justify-content: center;
         gap: 1.5rem;
@@ -123,7 +123,14 @@
     }
 
    .for-parents {
-    background-color: #F4BD37;
+    background-color: #ffcc33;
+    color: #333;
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px; /* Gør boksen smallere */
+    border-radius: 8px;
+    text-align: center; /* Centrerer teksten */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Tilføjer en let skygge */
    }
 
     .parent-info {
