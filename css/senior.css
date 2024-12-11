@@ -94,6 +94,15 @@ div.names {
     gap: 1.5rem;
 }
 
+.trainer-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    padding-top: 5rem;
+}
+
 .klar {
     font-size: medium;
     font-weight:bold
