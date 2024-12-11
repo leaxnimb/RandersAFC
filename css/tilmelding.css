@@ -14,6 +14,8 @@ aside h1{
     text-align: center;
     background-color: #ffffff;
     padding: 1rem 0;
+    border-top: 2px solid #F4BD37; /* styler top border*/
+    border-bottom: 2px solid #F4BD37;/* styler bottom border*/
 }
 /*styler main content og p*/
 main {
@@ -85,7 +87,21 @@ p {
         flex-direction: column;
     }
 
-    #prisoversigt, #billede {
+
+    #billede {
         flex: 1 1 100%;
+        order: -1; /* Sørger for at billede kommer før prisoversigt */
+        text-align: center; /* Sørger for centreret tekst og indhold */
+        width: 100%;
+    }
+
+    #billede img {
+        margin: 0 auto; /* Centrerer billedet */
+        display: block; /* Sikrer, at margin fungerer */
+    }
+
+    #prisoversigt {
+        flex: 1 1 100%;
+        order: 0;
     }
 }
