@@ -14,7 +14,7 @@ window.onload = function() {
             logoSection.id = 'logo-section';
             // Opretter img element, her gives src til hentes fra data, som er stien til jsondata-filen for finde stien til logo-img.
             const logoImg = document.createElement('img');
-            logoImg.src = data.logo; 
+            logoImg.src = data[0].logo; 
             logoImg.alt = 'Logo';
             
             // Der sættes til størrelse for loget.
