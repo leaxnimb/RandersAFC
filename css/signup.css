@@ -1,0 +1,96 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 25%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100%;
+}
+
+.form-logo {
+    margin-bottom: 2rem;
+}
+
+.form-logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border: none;
+}
+
+legend {
+    font-weight: bold;
+    width: 100%; /* Make legend span across the entire width */
+    margin-bottom: 0.5rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Allow labels to share equal space */
+    gap: 0.5rem;
+}
+input {
+ margin-right: 50%;
+}
+
+select {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #4a4a4a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #333333;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    fieldset {
+        flex-direction: column; /* Stack fields vertically on small screens */
+    }
+}

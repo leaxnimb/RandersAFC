@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Design</title>
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="../css/navStyle.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+    <section class="form-container">
+        <figure class="form-logo">
+            <img src="path-to-logo.svg" alt="Logo">
+        </figure>
+        <form class="registration-form">
+            <fieldset>
+                <legend>Navn*</legend>
+                <label>
+                    <input type="text" placeholder="Fornavn" required>
+                </label>
+                <label>
+                    <input type="text" placeholder="Efternavn" required>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Email*</legend>
+                <label>
+                    <input type="email" placeholder="Email" required>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>
+                    <legend>Hold*</legend>
+                    <select required>
+                        <option value="" disabled selected>Spiller</option>
+                        <option value="thunders">Randers Thunders, 10-20 år</option>
+                        <option value="rednecks">Randers Rednecks, 18+ år</option>
+                        <option value="flagfootball">Flagfootball, 13+ år</option>
+                    </select>
+                </label>
+                <label>
+                    <legend>udstyr*</legend>
+                    <select required>
+                        <option value="" disabled selected>Jeg...</option>
+                        <option value="borrow">Jeg vil gerne låne udstyr</option>
+                        <option value="own">Jeg medbringer mit eget udstyr</option>
+                    </select>
+                </label>
+            </fieldset>            
+            <button type="submit">Bekræft</button>
+        </form>
+    </section>
+</body>
+</html>
