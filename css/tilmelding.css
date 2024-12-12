@@ -1,10 +1,9 @@
 
-*styler body*/
 /*Definerer font*/
 @font-face {
     font-family: Graduate-Regular;
     src: url(../fonts/Graduate-Regular.ttf);
-  }
+}
 
 /*styler body*/
 body {
@@ -47,19 +46,25 @@ p {
     align-items: flex-start;
     margin-bottom: 1%;
 }
-#prisoversigt ul li {
-    list-style: none;
-    padding: 1%;
 
-    
-} 
+#introduktion{
+    padding-bottom: 2%;
+}
+#economy {
+    padding-bottom: 2%;
+}
 
-#economi ul {
-
+#economy ul {
     padding-left: 5%;
     padding-top: 1%;
     padding-bottom: 1%;
+
 }
+
+.pris-post {
+    margin-bottom: 13%;
+}
+
 /* Tilpasser bredde */
 #billede {
     flex: 1 1 40%; 
@@ -73,29 +78,37 @@ p {
     display: flex;
 }
 /*Styler knap*/
-#tilmelding {
-    margin-top: 25%;
+.button {
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #101110b6;
+    color: white;
+    font-size: 1.3rem;
+    padding: 3% 6%;
+    border-color: #F4BD37;
+    border: 30px;
     cursor: pointer;
     
 }
-.button#tilmelding {
-    background-color: #464749;
-    color: white;
-    border: none;
-    padding: 4% 6%;
-    font-size: 1.3rem;
-    text-decoration: none;
-    
-}
 .button#tilmelding:hover {   
-    transform: scale(1.1);    
-    transition: all 0.3s ease; 
+    background-color: black;
 }
 
 /* Responsiv til mobil */
 @media (max-width: 991px) {
+    #introduktion{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #economy {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
     #pris-billede-container {
         flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     #billede {
@@ -107,7 +120,7 @@ p {
 
     #billede img {
         margin: 0 auto; /* Centrerer billedet */
-        display: block; /* Sikrer, at margin fungerer */
+
     }
 
     #prisoversigt {
