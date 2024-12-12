@@ -1,0 +1,50 @@
+/*Definerer font*/
+@font-face {
+    font-family: Graduate-Regular;
+    src: url(../fonts/Graduate-Regular.ttf);
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+h1{
+    font-family: Graduate-Regular;
+    margin-top: 7rem;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+img{
+    height: 10rem;
+    margin-top: 3rem;
+}
+
+
+
+.spillerbtn {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #101110b6;
+    color: white;
+    font-size: 20px;
+    padding: 12px 50px;
+    border-color: #F4BD37;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  
+.spillerbtn:hover {
+    background-color: black;
+  }

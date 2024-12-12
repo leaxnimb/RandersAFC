@@ -1,3 +1,10 @@
+
+/*Definerer font*/
+@font-face {
+    font-family: Graduate-Regular;
+    src: url(../fonts/Graduate-Regular.ttf);
+}
+
 /*styler body*/
 body {
     font-family: Arial, sans-serif;
@@ -13,18 +20,23 @@ body {
 aside h1{
     text-align: center;
     background-color: #ffffff;
+
+    padding: 1%;
     padding: 1rem 0;
+    border-top: 2px solid #F4BD37; /* styler top border*/
+    border-bottom: 2px solid #F4BD37;/* styler bottom border*/
+    font-family: Graduate-Regular;
+
 }
 /*styler main content og p*/
 main {
     max-width: 1200px;
     margin: auto;
-    padding: 1rem;
+    padding: 1%;
 }
 p {
     font-size: 1rem;
 }
-
 /* Styler prisoversigt og billede side om side */
 #pris-billede-container {
     display: flex;
@@ -32,21 +44,32 @@ p {
     gap: 1rem;
     flex-direction: row-reverse;
     align-items: flex-start;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1%;
 }
 
+#introduktion{
+    padding-bottom: 2%;
+}
+#economy {
+    padding-bottom: 2%;
+}
 
-#prisoversigt ul {
-    list-style: none;
-    
-} 
+#economy ul {
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+}
+
+.pris-post {
+    margin-bottom: 13%;
+}
 
 /* Tilpasser bredde */
 #billede {
     flex: 1 1 40%; 
     text-align: center;
 }
-
 #billede img {
     width: 50%;
     height: auto;
@@ -54,38 +77,58 @@ p {
     background-color: #F4BD37;
     display: flex;
 }
-
 /*Styler knap*/
-#tilmelding {
-    margin-top: 25%;
+.button {
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #101110b6;
+    color: white;
+    font-size: 1.3rem;
+    padding: 3% 6%;
+    border-color: #F4BD37;
+    border: 30px;
     cursor: pointer;
     
 }
-
-
-.button#tilmelding {
-    background-color: #464749;
-    color: white;
-    border: none;
-    padding: 4% 6%;
-    font-size: 1.3rem;
-    text-decoration: none;
-    
-}
 .button#tilmelding:hover {   
-    transform: scale(1.1);    
-    transition: all 0.3s ease; 
+    background-color: black;
 }
-
-
 
 /* Responsiv til mobil */
 @media (max-width: 991px) {
-    #pris-billede-container {
-        flex-direction: column;
+    #introduktion{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #economy {
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
-    #prisoversigt, #billede {
+    #pris-billede-container {
+        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #billede {
         flex: 1 1 100%;
+        order: -1; /* Sørger for at billede kommer før prisoversigt */
+        text-align: center; /* Sørger for centreret tekst og indhold */
+        width: 100%;
+    }
+
+    #billede img {
+        margin: 0 auto; /* Centrerer billedet */
+
+    }
+
+    #prisoversigt {
+        flex: 1 1 100%;
+        order: 0;
+    }
+
+    #tilmelding {
+        margin-top: 1rem; /* Justér margin på mindre skærme */
     }
 }

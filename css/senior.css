@@ -1,15 +1,26 @@
+/*Definerer font*/
+@font-face {
+    font-family: Graduate-Regular;
+    src: url(../fonts/Graduate-Regular.ttf);
+  }
+
 .senior-head img {
 width: 100%;
 }
 
 h1 {
-    font-family: x;
+    font-family: Graduate-Regular;
     font-size: xx-large;
 }
 
 p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
+}
+
+.tekst{
+    margin-left: 13.5rem;
+    margin-right: 13.5rem;
 }
 
 .decorated-senior {
@@ -40,17 +51,116 @@ p {
     bottom: 0; /* Nederste linje */
 }
 
-.intro {
+.klar{
+    padding-bottom: 20px;
+}
+
+.nybegynder {
+    padding-bottom: 20px;
+}
+
+.unik {
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.kampe {
+    padding-bottom: 20px;
+}
+
+.bolden {
+    padding-bottom: 10px;
+}
+
+.klar {
+    font-size: medium;
+    font-weight:bold
+}
+
+.skridtet {
+    font-size: medium;
+    font-weight: lighter;
+}
+
+.banen {
+    font-size: medium;
+    font-weight: lighter;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+/* Generel styling til trainers sektionen */
+.trainers {
+    text-align: center;
+    background-color: #fff;
     padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    border-radius: 5px;
+}
+
+.trainers h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* Styling af hver enkelt kort */
+.card {
+    width: 25rem;
+    background-color: #F4BD37;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+/* Styling af indholdet i kortene */
+.names {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.names h3 {
+    font-size: larger;
+    font-weight: bold; 
+}
+
+.names p {
+    font-size: larger;
+    font-weight: lighter;
+}
+
+/* Styling til billedet */
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Layout for kortene samlet */
+.trainer-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+    gap: 1.5rem;
+}
+Forklaringer
+Klass
+
+/*.intro { /*tjek efter om det er senior-info*/
+   /* padding: 2rem;
     text-align: center;
     background-color: #fff;
     margin: 1rem auto;
     border: 1px solid #ccc;
     border-radius: 5px;
     max-width: 800px;
-}
+}*/
 
-.trainers {
+/*.trainers {
     text-align: center;
     background-color: #fff;
     padding: 2rem;
@@ -88,16 +198,58 @@ div.names {
   }
 
 
-.trainer-cards {
+.trainer-cards img {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
 }
 
+.trainer-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    padding-top: 5rem;
+}
+
+/* Tilmeldingssektion */
+.cta h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.btn-tilmelding {
+    background-color: #888;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-tilmelding:hover {
+    background-color: #666;
+}
+
+.fang {
+    font-size: medium;
+    font-weight: bolder;
+}
+
+
 /*
 .card {
     background-color: #fff;
-    border: 2px solid #ffcc33;
+    border: 2px solid #F4BD37;
     border-radius: 5px;
     text-align: center;
     padding: 1rem;
