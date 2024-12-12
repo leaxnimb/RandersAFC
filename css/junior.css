@@ -49,6 +49,19 @@
         border-radius: 5px;
         max-width: 800px;
     }*/
+
+    .alder {
+        padding-bottom: 20px;
+    }
+     .banen {
+        padding-bottom: 20px;
+     }
+
+    .regler {
+        padding-bottom: 20px;
+    }
+
+    
     
     .coaches {
         text-align: center;
