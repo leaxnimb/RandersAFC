@@ -12,6 +12,11 @@ p {
     font-size: larger;
 }
 
+.tekst{
+    margin-left: 13.5rem;
+    margin-right: 13.5rem;
+}
+
 .decorated-senior {
     text-align: center;
     position: relative;
