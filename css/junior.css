@@ -172,7 +172,16 @@
         flex: 1;
         padding-right: 20px;
     }
+
+    .sikkerhed {
+        padding-top: 15px;
+    }
     
+    .arbejder {
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
     
    /* .parent-image {
         flex: 1;

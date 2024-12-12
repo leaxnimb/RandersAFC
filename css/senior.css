@@ -144,6 +144,13 @@ div.names {
     font-weight: lighter;
 }
 
+.banen {
+    font-size: medium;
+    font-weight: lighter;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
 /* Tilmeldingssektion */
 .cta h2 {
     font-size: 1.8rem;
@@ -165,6 +172,7 @@ div.names {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    padding-top: 20px;
 }
 
 .btn-tilmelding:hover {
@@ -176,15 +184,6 @@ div.names {
     font-weight: bolder;
 }
 
-.fang::after {
-    content: "";
-    display: block;
-    width: 50%; /* Gør linjen kortere eller længere */
-    height: 4px; /* Tykkelse af stregen */
-    background-color: #F4BD37; /* Gul farve */
-    margin: 0 auto; /* Centrer linjen */
-    margin-top: 8px;
-}
 
 /*
 .card {
