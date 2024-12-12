@@ -1,9 +1,15 @@
+/*Definerer font*/
+@font-face {
+    font-family: Graduate-Regular;
+    src: url(../fonts/Graduate-Regular.ttf);
+  }
+
 .senior-head img {
 width: 100%;
 }
 
 h1 {
-    font-family: x;
+    font-family: Graduate-Regular;
     font-size: xx-large;
 }
 

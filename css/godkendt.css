@@ -1,3 +1,9 @@
+/*Definerer font*/
+@font-face {
+    font-family: Graduate-Regular;
+    src: url(../fonts/Graduate-Regular.ttf);
+  }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
