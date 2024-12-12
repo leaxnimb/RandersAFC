@@ -40,6 +40,26 @@ p {
     bottom: 0; /* Nederste linje */
 }
 
+.klar{
+    padding-bottom: 20px;
+}
+
+.nybegynder {
+    padding-bottom: 20px;
+}
+
+.unik {
+    padding-bottom: 20px;
+}
+
+.kampe {
+    padding-bottom: 20px;
+}
+
+.bolden {
+    padding-bottom: 20px;
+}
+
 .intro { /*tjek efter om det er senior-info*/
     padding: 2rem;
     text-align: center;
@@ -150,7 +170,7 @@ div.names {
     display: block;
     width: 50%; /* Gør linjen kortere eller længere */
     height: 4px; /* Tykkelse af stregen */
-    background-color: #ffcc33; /* Gul farve */
+    background-color: #F4BD37; /* Gul farve */
     margin: 0 auto; /* Centrer linjen */
     margin-top: 8px;
 }
@@ -158,7 +178,7 @@ div.names {
 /*
 .card {
     background-color: #fff;
-    border: 2px solid #ffcc33;
+    border: 2px solid #F4BD37;
     border-radius: 5px;
     text-align: center;
     padding: 1rem;
