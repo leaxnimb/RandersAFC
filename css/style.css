@@ -6,9 +6,15 @@
     text-decoration: none;
 }
 
+/*Definerer font*/
+@font-face {
+  font-family: Graduate-Regular;
+  src: url(../fonts/Graduate-Regular.ttf);
+}
+
 /* indsæt font */
 h1 {
-    font-family: x;
+    font-family: Graduate-Regular;
     font-size: xx-large;
 }
 

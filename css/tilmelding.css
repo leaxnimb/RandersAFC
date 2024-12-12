@@ -1,4 +1,12 @@
+
 *styler body*/
+/*Definerer font*/
+@font-face {
+    font-family: Graduate-Regular;
+    src: url(../fonts/Graduate-Regular.ttf);
+  }
+
+/*styler body*/
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -13,7 +21,13 @@ body {
 aside h1{
     text-align: center;
     background-color: #ffffff;
+
     padding: 1%;
+    padding: 1rem 0;
+    border-top: 2px solid #F4BD37; /* styler top border*/
+    border-bottom: 2px solid #F4BD37;/* styler bottom border*/
+    font-family: Graduate-Regular;
+
 }
 /*styler main content og p*/
 main {

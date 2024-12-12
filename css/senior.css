@@ -1,15 +1,26 @@
+/*Definerer font*/
+@font-face {
+    font-family: Graduate-Regular;
+    src: url(../fonts/Graduate-Regular.ttf);
+  }
+
 .senior-head img {
 width: 100%;
 }
 
 h1 {
-    font-family: x;
+    font-family: Graduate-Regular;
     font-size: xx-large;
 }
 
 p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
+}
+
+.tekst{
+    margin-left: 13.5rem;
+    margin-right: 13.5rem;
 }
 
 .decorated-senior {
@@ -38,6 +49,26 @@ p {
 
 .decorated-senior::after {
     bottom: 0; /* Nederste linje */
+}
+
+.klar{
+    padding-bottom: 20px;
+}
+
+.nybegynder {
+    padding-bottom: 20px;
+}
+
+.unik {
+    padding-bottom: 20px;
+}
+
+.kampe {
+    padding-bottom: 20px;
+}
+
+.bolden {
+    padding-bottom: 20px;
 }
 
 .intro { /*tjek efter om det er senior-info*/
@@ -113,6 +144,13 @@ div.names {
     font-weight: lighter;
 }
 
+.banen {
+    font-size: medium;
+    font-weight: lighter;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
 /* Tilmeldingssektion */
 .cta h2 {
     font-size: 1.8rem;
@@ -134,6 +172,7 @@ div.names {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    padding-top: 20px;
 }
 
 .btn-tilmelding:hover {
@@ -145,20 +184,11 @@ div.names {
     font-weight: bolder;
 }
 
-.fang::after {
-    content: "";
-    display: block;
-    width: 50%; /* Gør linjen kortere eller længere */
-    height: 4px; /* Tykkelse af stregen */
-    background-color: #ffcc33; /* Gul farve */
-    margin: 0 auto; /* Centrer linjen */
-    margin-top: 8px;
-}
 
 /*
 .card {
     background-color: #fff;
-    border: 2px solid #ffcc33;
+    border: 2px solid #F4BD37;
     border-radius: 5px;
     text-align: center;
     padding: 1rem;
