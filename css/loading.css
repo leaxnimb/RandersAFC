@@ -1,0 +1,29 @@
+/* Loader-container style */
+#global-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.loading-container {
+    text-align: center;
+    
+}
+
+.loading-gif {
+    width: 80%;
+    height: auto;
+}
+
+.loading-text {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+}
