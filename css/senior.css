@@ -89,6 +89,7 @@ p {
     padding-bottom: 20px;
 }
 
+/* Generel styling til trainers sektionen */
 .trainers {
     text-align: center;
     background-color: #fff;
@@ -98,49 +99,56 @@ p {
     border-radius: 5px;
 }
 
-.card h2 {
+.trainers h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
 
-div .trainer-cards {
+/* Styling af hver enkelt kort */
+.card {
     width: 25rem;
     background-color: #F4BD37;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 25px;
     padding: 1rem;
+    border-radius: 5px;
 }
 
-div.names {
+/* Styling af indholdet i kortene */
+.names {
     text-align: center;
     padding: 10px 20px;
-  }
+}
 
 .names h3 {
     font-size: larger;
     font-weight: bold; 
 }
 
-.names p{
+.names p {
     font-size: larger;
-    font-weight:lighter;
-  }
-
-
-.coach-card img {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
+    font-weight: lighter;
 }
 
+/* Styling til billedet */
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Layout for kortene samlet */
 .trainer-cards {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: center;
     justify-content: space-evenly;
-    padding-top: 5rem;
+    padding-top: 2rem;
+    gap: 1.5rem;
 }
+Forklaringer
+Klass
 
 /*.intro { /*tjek efter om det er senior-info*/
    /* padding: 2rem;
