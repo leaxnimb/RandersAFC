@@ -11,6 +11,13 @@
         font-family: Arial, Helvetica, sans-serif;
         font-size: larger;
     }
+
+    .tekst{
+        margin-left: 13.5rem;
+        margin-right: 13.5rem;
+        line-height: 2;
+    }
+
     
     .decorated-junior {
         text-align: center;
