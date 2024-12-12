@@ -1,11 +1,11 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", () => {
-    // Opret en loader-container
+    // Opretter en loader-container, hvor derefter der indsættes html
     const loader = document.createElement("div");
     loader.id = "global-loader";
     loader.innerHTML = `
         <div class="loading-container">
-            <img src="../img/gif/load.gif" alt="Loading..." class="loading-gif">
+            <img src="../img/gif/load.gif" alt="Loading" class="loading-gif">
             <p class="loading-text">Vent venligst...</p>
         </div>
     `;
