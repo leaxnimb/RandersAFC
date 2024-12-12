@@ -145,7 +145,7 @@
     }
 
    .for-parents {
-    background-color: #ffcc33;
+    background-color: #F4BD37;
     color: #333;
     margin: 30px auto;
     padding: 20px;
@@ -216,7 +216,7 @@
 }
 
 .prev, .next {
-    background-color: #ffcc33;
+    background-color: #F4BD37;
     color: #000;
     border: none;
     padding: 0.5rem 1rem;
@@ -226,7 +226,7 @@
 }
 
 .prev:hover, .next:hover {
-    background-color: #ffa500;
+    background-color: #F4BD37;
 }
 
 .instagram-handle {
