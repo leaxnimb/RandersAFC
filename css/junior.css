@@ -84,6 +84,7 @@
     margin: 1rem auto;
     max-width: 800px;
     border-radius: 5px;
+    border-top: 2px solid #F4BD37; /* styler top border*/
 }
 
 .coaches h2 {
