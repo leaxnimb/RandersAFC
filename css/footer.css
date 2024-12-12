@@ -8,7 +8,7 @@ body{
     margin: 0px;
 }
 #footer {
-    background-color: #F4B400;
+    background-color: #F4BD37;
     color: black;
     display: flex;
     justify-content: space-between;
@@ -26,18 +26,24 @@ body{
 /* Logoet */
 #footer #logo-section img {
     height: 10%; 
-    max-height: 80px; 
+    max-height: 200px; 
     border-radius: 50%;
 }
 
 /* Kontakt og adresse */
 #footer h3 {
-    margin-bottom: 1em; 
+    margin-bottom: 5%;
+    align-items: center; 
 }
 
 #footer p {
     margin: 0.5em 0; 
     font-size: 1rem; 
+}
+.icon {
+    width: 3%; /* Ændre bredde efter behov */
+    height: auto; /* Ændre højde efter behov */
+    margin-right: 5px; /* En margin for at få lidt afstand mellem ikonet og teksten */
 }
 
 /* Responsivt design */
