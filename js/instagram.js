@@ -1,33 +1,28 @@
-"use strict";
+document.addEventListener('DOMContentLoaded', () => {
+    const slider = document.querySelector('.instagram-images');
+    const images = document.querySelectorAll('.instagram-images img');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
 
-const prevButton = document.querySelector('.prev');
-const nextButton = document.querySelector('.next');
-const imageContainer = document.querySelector('.instagram-images');
-const images = document.querySelectorAll('.instagram-images img');
+    let currentIndex = 0;
+    const maxIndex = images.length - 3; // Antallet af billeder minus dem, der vises på én gang (3)
 
-let currentIndex = 0; // Start på første billede
-const visibleImages = 3; // Antal synlige billeder
-const totalImages = images.length; // Total antal billeder
-const imageWidth = imageContainer.clientWidth / visibleImages; // Bredden af hvert billede
-
-// Opdater containerbredden for at passe til antal billeder
-imageContainer.style.width = `${totalImages * imageWidth}px`;
-
-prevButton.addEventListener('click', () => {
-    if (currentIndex > 0) {
-        currentIndex--;
-        updateCarousel();
+    function updateSlider() {
+        const translateX = -currentIndex * (100 / 3); // Flytter med 1/3 af bredden pr. klik
+        slider.style.transform = `translateX(${translateX}%)`;
     }
-});
 
-nextButton.addEventListener('click', () => {
-    if (currentIndex < totalImages - visibleImages) {
-        currentIndex++;
-        updateCarousel();
-    }
-});
+    prevButton.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateSlider();
+        }
+    });
 
-function updateCarousel() {
-    const offset = currentIndex * imageWidth;
-    imageContainer.style.transform = `translateX(-${offset}px)`;
-}
+    nextButton.addEventListener('click', () => {
+        if (currentIndex < maxIndex) {
+            currentIndex++;
+            updateSlider();
+        }
+    });
+});
