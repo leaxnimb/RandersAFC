@@ -186,14 +186,14 @@ div.polaroid {
   @media(max-width:991px){
 
     .tekst{
-        margin-left: 7rem;
-        margin-right: 7rem;
+        margin-left: 5%;
+        margin-right: 5%;
         line-height: 2;
     }
 
     .tekstbokse{
-        margin-left: 7rem;
-        margin-right: 7rem;
+        margin-left: 5%;
+        margin-right: 5%;
         line-height: 2;
     }
 
