@@ -45,7 +45,7 @@ p {
     padding-bottom: 5rem;
 }
 
-/* scroll to top btn */
+/* scroll to top knap */
 
 #myBtn {
     display: none; /* Gemt by default */
@@ -58,6 +58,10 @@ p {
   }
   
  /*  #myBtn:hover */
+ #myBtn:hover {
+  content: url("../img/icons/skumfingergul.png"); /* Skifter til et andet billede */
+  transform: scale(1.1); /* Eventuelt gør knappen lidt større */
+}
   
 
 
@@ -169,8 +173,8 @@ div.polaroid {
 
   /* styling af tekstbokse section */
   .tekstbokse{
-    margin-left: 13.5rem;
-    margin-right: 13.5rem;
+    margin-left: 13%;
+    margin-right: 13%;
     line-height: 2;
     padding-bottom: 4rem;
   }
