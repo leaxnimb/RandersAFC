@@ -22,8 +22,9 @@
         margin-left: 13.5rem;
         margin-right: 13.5rem;
         line-height: 2;
+        border-top: 2px solid #F4BD37; /* styler top border*/
+        border-bottom: 2px solid #F4BD37;/* styler bottom border*/
     }
-
     
     .decorated-junior {
         text-align: center;
@@ -154,14 +155,19 @@
         background-color: #333;
     }
 
-.tekst{
-    border-top: 2px solid #F4BD37;/* styler bottom border*/
-}
+
 
 .thunder-klar {
     padding-top: 20px;
+    font-size: bold;
+    border-bottom: 20px;
 }
 
+.krafter {
+    font-weight: 100;
+    font-size: medium;
+    border-bottom: 15px;
+}
 
 /* Forældre-sektion */
 .for-parents {
@@ -175,6 +181,7 @@
     margin: 1rem auto;
     max-width: 800px; /* Matcher bredden på andre sektioner */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tilføjet skygge for dybde */
+    border-top: 20px;
 }
 
 /* Tekstindhold */
