@@ -8,20 +8,67 @@
     <link rel="stylesheet" href="../css/navStyle.css">
     <link rel="stylesheet" href="../css/footer.css">
 </head>
+
 <body>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="../img/logo/logo-single.png" alt="logo">
+        </a>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Spiller</a>
+                    <ul class="sub">
+                        <li><a href="junior.html">Junior</a></li>
+                        <li><a href="senior.html">Senior</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Ny i klubben</a>
+                    <ul class="sub">
+                        <li><a href="tilmelding.html">Tilmelding</a></li>
+                        <li><a href="error.html">Prøvetræning</a></li>
+                        <li><a href="error.html">Bliv frivillig</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Andre tilbud</a>
+                    <ul class="sub">
+                        <li><a href="error.html">Flagfootball</a></li>
+                        <li><a href="error.html">Styrketræning</a></li>
+                        <li><a href="error.html">Dommerkursus</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Praktisk</a>
+                    <ul class="sub">
+                        <li><a href="error.html">Hvem er vi?</a></li>
+                        <li><a href="error.html">Til forældre</a></li>
+                        <li><a href="error.html">Book os</a></li>
+                        <li><a href="error.html">Sponser</a></li>
+                        <li><a href="error.html">Kontakt</a></li>
+                    </ul>
+                </li>
+                <li><a href="error.html">Galleri</a></li>
+            </ul>
+        </nav>
+    </header>
     <section class="form-container">
         <figure class="form-logo">
-            <img src="../img/icons/bruger.png" alt="Logo">
+            <img src="/img/icons/user.webp" alt="Logo" id="spillerlogo">
         </figure>
         <form class="registration-form">
-            <fieldset>
+            <fieldset class="navnfelt">
                 <legend>Navn*</legend>
-                <label>
-                    <input type="text" placeholder="Fornavn" required>
-                </label>
-                <label>
-                    <input type="text" placeholder="Efternavn" required>
-                </label>
+                    <label>
+                        <input type="text" placeholder="Fornavn" required>
+                    </label>
+                    <label>
+                        <input type="text" placeholder="Efternavn" required>
+                    </label>
             </fieldset>
             <fieldset>
                 <legend>Email*</legend>
@@ -51,5 +98,11 @@
             <button type="submit">Bekræft</button>
         </form>
     </section>
+    <footer id="footer"></footer>
+    <!-- linker til javascript -->
+    <script src="../js/loading.js"></script>
+    <script src="../js/footer.js"></script>  
+    <script src="../js/script.js"></script>
+
 </body>
 </html>
