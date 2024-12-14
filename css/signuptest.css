@@ -1,11 +1,11 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: #23242a;
-    min-height: 100vh; /* Ensure the body takes full height of the viewport */
+    min-height: 100vh;
     display: flex;
-    flex-direction: column; /* Make sure content stacks vertically */
-    justify-content: space-between; /* Ensure the footer is at the bottom */
-    margin: 0; /* Remove default body margin */
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
 }
 
 .bottonsection {
@@ -52,21 +52,37 @@ height: 50px;
 fieldset {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.5rem;
     border: none;
     justify-content: center;
+    width: 100%;
+}
+label.labelclass {
+    width: 25em;
+}
+input {
+    width: 100%; /* Ensure all input fields take full width */
+    padding: 1em;
+    margin: 0.5em 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.inputemail {
+    margin-top: 1.5em;
 }
 .registration-form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     width: 100%;
+    
 }
 .navnfelt{
     flex-direction: row;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 #labelclass {
@@ -74,6 +90,7 @@ fieldset {
     flex-direction: column;
     flex: 1; /* Allow labels to share equal space */
     gap: 1.5rem;
+    
 }
 .dropdown {
     min-width: 15em;
@@ -86,8 +103,8 @@ fieldset {
 }
 
 .select{
-    background: #2a2f3b;
-    color: #fff;
+    background: #D9D9D9;
+    color: #00000088;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -111,7 +128,7 @@ fieldset {
     height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 6px solid #fff;
+    border-top: 6px solid #848484;
     transition: 0.3s;
 }
 
