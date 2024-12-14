@@ -16,6 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentIndex > 0) {
             currentIndex--;
             updateSlider();
+        }else{
+            currentIndex = maxIndex;
+            updateSlider();
         }
     });
 
@@ -23,6 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentIndex < maxIndex) {
             currentIndex++;
             updateSlider();
-        }
+        }else {
+            currentIndex = 0;
+            updateSlider();}   
     });
 });
