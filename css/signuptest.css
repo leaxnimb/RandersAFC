@@ -1,115 +1,149 @@
+/* Global Styles */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: #ffffff;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;  /* Vertically center content */
+    align-items: center;      /* Horizontally center content */
     margin: 0;
 }
 
-.bottonsection {
-    display: flex ;
-        gap: 2em;
-        flex-grow: 1;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-}
-    .form-container {
+.form-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ffffff;
-    padding: 20%;
-    padding-top: 10%;
-    padding-bottom: 20%;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 100%;
-}
-
-.form-logo {
-    margin-bottom: 2rem;
-    align-items: center;
-    display: flex;
     justify-content: center;
-    margin-top: 6rem;
+    background-color: #ffffff;
+    padding: 4rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;   /* Set max-width to prevent form from stretching too wide */
+    margin: 0 auto;     /* Center form horizontally */
 }
 
-#spillerlogo {
-    
-    margin-bottom: 2rem;
-    width: 10%;
-    height: auto;
-    align-items: center;
-}
-
-.form-logo img {
-width: 50px;
-height: 50px;
-}
 fieldset {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
     border: none;
     width: 100%;
-    justify-content: flex-start;
-    margin-left: 20%;
+    justify-content: center;  /* Center form inputs horizontally */
 }
+
 label.labelclass {
-    width: 25em;
+    display: flex;
+    flex-direction: column;
+    width: 45%;  /* This ensures labels like 'Fornavn' and 'Efternavn' also take up the same width */
+    max-width: 250px; /* Control max width of inputs */
+    margin-bottom: 1em; /* Add space between inputs */
 }
-.emailLabelClass {
-    width: 51.5em;
-    
-}
+
 input {
-    width: 100%; /* Ensure all input fields take full width */
+    width: 100%;  /* Full width for all input fields */
     padding: 1em;
     margin: 0.5em 0;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
-.inputemail {
-    margin-top: 1.5em;
+
+.bottonconfirm{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    width: 100%;
 }
-.registration-form {
+
+.bottonsection {
+    display: flex;
+    gap: 2em;
+    justify-content: center;  /* Center the dropdowns */
+    margin: 1rem 0;
+}
+
+.dropdown {
+    min-width: 15em;
+    margin: 0 auto;  /* Center the dropdown */
+    position: relative;
+}
+
+button {
+    padding: 1rem;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #4a4a4a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width:100%;  /* Increase width to make button more prominent */
+    max-width: 200px;  /* Limit the maximum width */
+    margin: 1.5rem 0;  /* Adjust margin for spacing */
+    text-align: center;
+}
+
+form .registration-form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     width: 100%;
-    
-}
-.navnfelt{
-    flex-direction: row;
-    display: flex;
     align-items: center;
-    justify-content: flex-start;
-    margin-left: 20%;
-    
 }
 
-#labelclass {
+.form-logo {
+    margin-bottom: 2rem;
     display: flex;
-    flex-direction: column;
-    flex: 1; /* Allow labels to share equal space */
-    gap: 1.5rem;
-    
-}
-.dropdown {
-    min-width: 15em;
-    position: relative;
-    margin: 2em;
+    justify-content: center;
+    margin-top: 6rem;
 }
 
-.dropdown * {
-    box-sizing: border-box;
+#spillerlogo {
+    width: 20%;
+    height: auto;
+    margin-bottom: 2rem;
+    align-items: center;
 }
 
-.select{
+.inputemail {
+    margin-top: 1.5em;
+    width: 100%;
+}
+
+.menu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #323741;
+    border: 1px #363a43 solid;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    color: #9fa5b5;
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    display: none;
+    z-index: 1;
+}
+
+.menu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background-color: #2a2d35;
+}
+
+.menu-open {
+    display: block;
+}
+
+.select {
     background: #D9D9D9;
     color: #00000088;
     display: flex;
@@ -119,15 +153,6 @@ input {
     padding: 1em;
     cursor: pointer;
     transition: background 0.3s;
-}
-
-.select-clicked {
-    border: 2px #26489a solid;
-    box-shadow: 0 0 0.8em #26489a; 
-}
-
-.selected:hover {
-    background: #323741;
 }
 
 .caret {
@@ -141,40 +166,4 @@ input {
 
 .caret-rotate {
     transform: rotate(180deg);
-}
-
-.menu {
-    list-style: none;
-    padding: 0.2em 0.5em;
-    background: #323741;
-    border: 1px #363a43 solid;
-    box-shadow: 0 0.5em 1em rgba( 0, 0, 0, 0.2);
-    border-radius: 0.5em;
-    color: #9fa5b5;
-    position: absolute;
-    top: 3em;
-    left: 50%;
-    width: 100%;
-    transform: translateX(-50%);
-    display: none; /* Initial state is hidden */
-    z-index: 1;
-}
-
-.menu li {
-    padding: 0.7em 0.5em;
-    margin: 0.3em 0;
-    border-radius: 0.5em;
-    cursor: pointer;
-}
-.menu li:hover {
-    background-color: #2a2d35;
-}
-
-.active {
-    background: #23242a;
-    display: none;
-}
-
-.menu-open {
-    display: block; /* Only toggle display */
 }
