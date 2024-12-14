@@ -81,6 +81,9 @@ button {
     margin: 1.5rem 0;  /* Adjust margin for spacing */
     text-align: center;
 }
+button:hover {
+    background-color: #6a6a6a; /* Lidt lysere grå farve ved hover */
+}
 
 form .registration-form {
     display: flex;
