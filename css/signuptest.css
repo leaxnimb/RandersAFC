@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #23242a;
+    min-height: 100vh; /* Ensure the body takes full height of the viewport */
+    display: flex;
+    flex-direction: column; /* Make sure content stacks vertically */
+    justify-content: space-between; /* Ensure the footer is at the bottom */
+    margin: 0; /* Remove default body margin */
+}
+
+.bottonsection {
+    display: flex ;
+        gap: 2em;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+}
+    .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20%;
+    padding-top: 10%;
+    padding-bottom: 20%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100%;
+}
+
+.form-logo {
+    margin-bottom: 2rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#spillerlogo {
+    
+    margin-bottom: 2rem;
+    width: 25%;
+    height: auto;
+    align-items: center;
+}
+
+.form-logo img {
+width: 50px;
+height: 50px;
+}
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border: none;
+    justify-content: center;
+}
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+.navnfelt{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#labelclass {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Allow labels to share equal space */
+    gap: 1.5rem;
+}
+.dropdown {
+    min-width: 15em;
+    position: relative;
+    margin: 2em;
+}
+
+.dropdown * {
+    box-sizing: border-box;
+}
+
+.select{
+    background: #2a2f3b;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.select-clicked {
+    border: 2px #26489a solid;
+    box-shadow: 0 0 0.8em #26489a; 
+}
+
+.selected:hover {
+    background: #323741;
+}
+
+.caret {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: 0.3s;
+}
+
+.caret-rotate {
+    transform: rotate(180deg);
+}
+
+.menu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #323741;
+    border: 1px #363a43 solid;
+    box-shadow: 0 0.5em 1em rgba( 0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    color: #9fa5b5;
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    display: none; /* Initial state is hidden */
+    z-index: 1;
+}
+
+.menu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+.menu li:hover {
+    background-color: #2a2d35;
+}
+
+.active {
+    background: #23242a;
+    display: none;
+}
+
+.menu-open {
+    display: block; /* Only toggle display */
+}

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Design</title>
-    <link rel="stylesheet" href="../css/signup.css">
+    <!-- Linking Stylesheets -->
+    <link rel="stylesheet" href="../css/signuptest.css">
     <link rel="stylesheet" href="../css/navStyle.css">
     <link rel="stylesheet" href="../css/footer.css">
 </head>
@@ -56,54 +58,64 @@
             </ul>
         </nav>
     </header>
-    <section class="form-container">
-        <figure class="form-logo">
-            <img src="/img/icons/user.webp" alt="Logo" id="spillerlogo">
-        </figure>
-        <form class="registration-form">
-            <fieldset class="navnfelt">
-                <legend>Navn*</legend>
-                    <label class="labelclass">
-                        <input type="text" placeholder="Fornavn" required>
-                    </label>
-                    <label class="labelclass">
-                        <input type="text" placeholder="Efternavn" required>
-                    </label>
-            </fieldset>
-            <fieldset>
-                <legend>Email*</legend>
+    <figure class="form-logo">
+        <img src="/img/icons/user.webp" alt="Logo" id="spillerlogo">
+    </figure>
+    <form class="registration-form">
+        <fieldset class="navnfelt">
                 <label class="labelclass">
-                    <input type="email" placeholder="Email" required>
-                </label >
-            </fieldset>
-            <fieldset>
-                <label class="labelclass">
-                    <legend>Hold*</legend>
-                    <select required>
-                        <option value="" disabled selected>Spiller</option>
-                        <option value="thunders">Randers Thunders, 10-20 år</option>
-                        <option value="rednecks">Randers Rednecks, 18+ år</option>
-                        <option value="flagfootball">Flagfootball, 13+ år</option>
-                    </select>
+                    <input type="text" placeholder="Fornavn" required>
                 </label>
                 <label class="labelclass">
-                    <legend>udstyr*</legend>
-                    <select required>
-                        <option value="" disabled selected>Jeg...</option>
-                        <option value="borrow">Jeg vil gerne låne udstyr</option>
-                        <option value="own">Jeg medbringer mit eget udstyr</option>
-                    </select>
+                    <input type="text" placeholder="Efternavn" required>
                 </label>
-            </fieldset>            
-            <button type="submit">Bekræft</button>
-        </form>
+        </fieldset>
+        <fieldset>
+            <label class="labelclass">
+                <input type="email" placeholder="Email" required>
+            </label >
+        </fieldset>
+<section class="bottonsection">
+    <!-- Dropdown Section 1 -->
+    <section class="dropdown">
+        <!-- Select Button -->
+        <section class="select">
+            <span class="selected">Spiller</span>
+            <section class="caret"></section>
+        </section>
+        <!-- Menu List -->
+        <ul class="menu">
+            <li>Randers Thunders 10-20 år</li>
+            <li>Rednex 18+ år</li>
+            <li>Flagfootball 13+ år</li>
+            <li class="active"></li>
+        </ul>
     </section>
-    <footer id="footer"></footer>
-    <!-- linker til javascript -->
-    <script src="../js/loading.js"></script>
-    <script src="../js/footer.js"></script>  
-    <script src="../js/script.js"></script>
-    <script src="../js/signup.js"></script>
 
+    <!-- Dropdown Section 2 -->
+    <section class="dropdown">
+        <!-- Select Button -->
+        <section class="select">
+            <span class="selected">Jeg...</span>
+            <section class="caret"></section>
+        </section>
+        <!-- Menu List -->
+        <ul class="menu">
+            <li>Vil gerne låne udstyr</li>
+            <li>Jeg har selv udstyr</li>
+            <li class="active"></li>
+        </ul>
+    </section>
+</section>
+
+    <!-- Footer Section -->
+    <footer id="footer"></footer>
+
+    <!-- JavaScript Files -->
+    <script src="../js/loading.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/signuptest.js"></script>
 </body>
+
 </html>
