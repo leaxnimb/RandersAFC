@@ -2,25 +2,20 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: #ffffff;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;  /* Vertically center content */
-    align-items: center;      /* Horizontally center content */
+    min-height: 100vh; /* Ensure full viewport height */
     margin: 0;
+    display: flex;
+    flex-direction: column; /* Aligns footer at the bottom */
 }
 
+/* Form Container */
 .form-container {
+    flex-grow: 1; /* Ensures this section grows to fill available space */
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    background-color: #ffffff;
-    padding: 4rem;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 800px;   /* Set max-width to prevent form from stretching too wide */
-    margin: 0 auto;     /* Center form horizontally */
+    align-items: center;
+    padding: 2rem; /* Spacing for medium to wide screens */
 }
 
 fieldset {
@@ -49,12 +44,14 @@ input {
     background: #d9d9d97e;
 }
 
-.bottonconfirm{
+li.active {
+    display: none;
+}
+
+.bottonconfirm {
     display: flex;
-    align-items: center;
-    justify-items: center;
     justify-content: center;
-    width: 100%;
+    margin-top: 1rem;
 }
 
 .bottonsection {
@@ -90,7 +87,8 @@ form .registration-form {
     flex-direction: column;
     gap: 1.5rem;
     width: 100%;
-    align-items: center;
+    max-width: 1200px; /* Allow spreading on wide screens */
+    padding: 0 2rem; /* Add spacing inside form */
 }
 
 .form-logo {
@@ -101,7 +99,7 @@ form .registration-form {
 }
 
 #spillerlogo {
-    width: 20%;
+    width: 50%;
     height: auto;
     margin-bottom: 2rem;
     align-items: center;
@@ -112,12 +110,20 @@ form .registration-form {
     width: 100%;
 }
 
+.footerbox {
+    display: flex;
+    
+}
+#footer {
+    display: flex;
+}
+
 .menu {
     list-style: none;
     padding: 0.2em 0.5em;
     background: #D9D9D9;
     border: 1px #F4BD37 solid;
-    box-shadow: 0 0.5em 1em #F4BD37
+    box-shadow: 0 0.5em 1em #74747473;
     border-radius: 0.5em;
     color: #9fa5b5;
     position: absolute;
@@ -129,11 +135,17 @@ form .registration-form {
     z-index: 1;
 }
 
+
 .menu li {
     padding: 0.7em 0.5em;
     margin: 0.3em 0;
     border-radius: 0.5em;
     cursor: pointer;
+    border-color: #F4BD37;
+}
+
+li {
+    border: 1px #F4BD37;
 }
 
 .menu li:hover {
@@ -142,10 +154,11 @@ form .registration-form {
 
 .menu-open {
     display: block;
+    color: #111111;
 }
 
 .select {
-    background: #d9d9d981;
+    background: #d9d9d9;
     color: #00000088;
     display: flex;
     justify-content: space-between;
@@ -170,8 +183,44 @@ form .registration-form {
     border-right: 5px solid transparent;
     border-top: 6px solid #848484;
     transition: 0.3s;
+    display: none;
 }
 
 .caret-rotate {
     transform: rotate(180deg);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    label.labelclass {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    #spillerlogo {
+        width: 40%;
+    }
+    .bottonsection {
+        display: flex;
+        gap: 2em;
+        justify-content: center;
+        margin: 1rem 0;
+        flex-direction: column;
+ }   
+ .emailLabelClass {
+    width: 240px;
+} 
+}
+
+@media (min-width: 1200px) {
+    form.registration-form {
+        padding: 0 4rem;
+    }
+
+    label.labelclass {
+        max-width: 300px;
+    }
 }
