@@ -1,108 +1,102 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="da"> <!-- Sætter sproget til dansk -->
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Design</title>
-    <link rel="stylesheet" href="../css/signup.css">
-    <link rel="stylesheet" href="../css/navStyle.css">
-    <link rel="stylesheet" href="../css/footer.css">
+    <meta charset="UTF-8"> <!-- Sætter tegnsættet til UTF-8 for at understøtte danske tegn -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sørger for at siden er responsiv på mobil -->
+    <title>SignUP</title> <!-- Titel på siden -->
+    
+    <!-- Linking Stylesheets -->
+    <link rel="stylesheet" href="../css/signup.css"> <!-- Linker til signup.css -->
+    <link rel="stylesheet" href="../css/navStyle.css"> <!-- Linker til navigationens CSS -->
+    <link rel="stylesheet" href="../css/footer.css"> <!-- Linker til footerens CSS -->
+    <link rel="stylesheet" href="../css/loading.css"> <!-- Linker til CSS for loading animationer -->
 </head>
 
 <body>
     <header>
         <a href="index.html">
-            <img class="logo" src="../img/logo/logo-single.png" alt="logo">
+            <img class="logo" src="../img/logo/logo-single.png" alt="logo"> <!-- Logo til din hjemmeside -->
         </a>
 
-        <input type="checkbox" id="menu-bar">
-        <label for="menu-bar">Menu</label>
+        <input type="checkbox" id="menu-bar"> <!-- Bruges til at toggles menuen på mobile enheder -->
+        <label for="menu-bar">Menu</label> <!-- Menu trigger label -->
 
         <nav class="navbar">
+            <!-- Navigationsmenuen -->
             <ul>
-                <li><a href="#">Spiller</a>
+                <li><a href="#">Spiller</a> <!-- Menu for spiller, med sub-menu -->
                     <ul class="sub">
                         <li><a href="junior.html">Junior</a></li>
                         <li><a href="senior.html">Senior</a></li>
                     </ul>
                 </li>
-
-                <li><a href="#">Ny i klubben</a>
-                    <ul class="sub">
-                        <li><a href="tilmelding.html">Tilmelding</a></li>
-                        <li><a href="error.html">Prøvetræning</a></li>
-                        <li><a href="error.html">Bliv frivillig</a></li>
-                    </ul>
-                </li>
-
-                <li><a href="#">Andre tilbud</a>
-                    <ul class="sub">
-                        <li><a href="error.html">Flagfootball</a></li>
-                        <li><a href="error.html">Styrketræning</a></li>
-                        <li><a href="error.html">Dommerkursus</a></li>
-                    </ul>
-                </li>
-
-                <li><a href="#">Praktisk</a>
-                    <ul class="sub">
-                        <li><a href="error.html">Hvem er vi?</a></li>
-                        <li><a href="error.html">Til forældre</a></li>
-                        <li><a href="error.html">Book os</a></li>
-                        <li><a href="error.html">Sponser</a></li>
-                        <li><a href="error.html">Kontakt</a></li>
-                    </ul>
-                </li>
-                <li><a href="error.html">Galleri</a></li>
+                <!-- Flere menupunkter følger her... -->
             </ul>
         </nav>
     </header>
-    <section class="form-container">
-        <figure class="form-logo">
-            <img src="/img/icons/user.webp" alt="Logo" id="spillerlogo">
-        </figure>
-        <form class="registration-form">
-            <fieldset class="navnfelt">
-                <legend>Navn*</legend>
-                    <label>
-                        <input type="text" placeholder="Fornavn" required>
-                    </label>
-                    <label>
-                        <input type="text" placeholder="Efternavn" required>
-                    </label>
-            </fieldset>
-            <fieldset>
-                <legend>Email*</legend>
-                <label>
-                    <input type="email" placeholder="Email" required>
-                </label>
-            </fieldset>
-            <fieldset>
-                <label>
-                    <legend>Hold*</legend>
-                    <select required>
-                        <option value="" disabled selected>Spiller</option>
-                        <option value="thunders">Randers Thunders, 10-20 år</option>
-                        <option value="rednecks">Randers Rednecks, 18+ år</option>
-                        <option value="flagfootball">Flagfootball, 13+ år</option>
-                    </select>
-                </label>
-                <label>
-                    <legend>udstyr*</legend>
-                    <select required>
-                        <option value="" disabled selected>Jeg...</option>
-                        <option value="borrow">Jeg vil gerne låne udstyr</option>
-                        <option value="own">Jeg medbringer mit eget udstyr</option>
-                    </select>
-                </label>
-            </fieldset>            
-            <button type="submit">Bekræft</button>
-        </form>
-    </section>
-    <footer id="footer"></footer>
-    <!-- linker til javascript -->
-    <script src="../js/loading.js"></script>
-    <script src="../js/footer.js"></script>  
-    <script src="../js/script.js"></script>
 
+    <div class="form-container">
+        <figure class="form-logo">
+            <img src="/img/icons/user.webp" alt="Logo" id="spillerlogo"> <!-- spiller ikon -->
+        </figure>
+        
+        <form class="registration-form"> <!-- Form til tilmelding -->
+            <fieldset class="navnfelt">
+                <label class="labelclass">
+                    <input type="text" placeholder="Fornavn" required> <!-- Input for fornavn -->
+                </label>
+                <label class="labelclass">
+                    <input type="text" placeholder="Efternavn" required> <!-- Input for efternavn -->
+                </label>
+            </fieldset>
+            <fieldset>
+                <label class="emailLabelClass">
+                    <input type="email" placeholder="Email" required class="inputemail"> <!-- Input for email -->
+                </label>
+            </fieldset>
+
+            <section class="bottonsection"> <!-- Sektion for dropdowns og knap -->
+                <!-- Dropdown Section 1 -->
+                <section class="dropdown">
+                    <section class="select">
+                        <span class="selected">Spiller</span> <!-- Standardvalgt tekst -->
+                        <section class="caret"></section> <!-- Pil for dropdown -->
+                    </section>
+                    <ul class="menu"> <!-- Liste over dropdown-valg -->
+                        <li>Randers Thunders 10-20 år</li>
+                        <li>Rednex 18+ år</li>
+                        <li>Flagfootball 13+ år</li>
+                    </ul>
+                </section>
+
+                <!-- Dropdown Section 2 -->
+                <section class="dropdown">
+                    <section class="select">
+                        <span class="selected">Jeg...</span>
+                        <section class="caret"></section>
+                    </section>
+                    <ul class="menu">
+                        <li>Vil gerne låne udstyr</li>
+                        <li>Jeg har selv udstyr</li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="bottonconfirm">
+                <button type="submit">Bekræft</button> <!-- Bekræftelsesknap -->
+            </section>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer id="footer"></footer> <!-- Footer -->
+
+    <!-- JavaScript Files -->
+    <script src="../js/loading.js"></script> <!-- JavaScript til loading animation -->
+    <script src="../js/footer.js"></script> <!-- JavaScript til footer -->
+    <script src="../js/script.js"></script> <!-- JavaScript til generel funktionalitet -->
+    <script src="../js/signup.js"></script> <!-- JavaScript til tilmeldingsform -->
 </body>
+
 </html>

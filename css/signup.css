@@ -1,119 +1,233 @@
-/* Reset styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100%;
-    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;  /* Sætter skrifttypen til Arial, Helvetica eller sans-serif */
+    background: #ffffff;  /* Hvid baggrundsfarve */
+    min-height: 100vh; /* Sørger for, at body fylder hele viewport-højden */
+    margin: 0;  /* Fjerner standard margin */
+    display: flex;  /* Brug flexbox for layout */
+    flex-direction: column; /* Sørger for, at footer placeres nederst */
 }
 
+/* Form Container */
 .form-container {
+    flex-grow: 1; /* Gør, at denne sektion vokser og fylder det tilgængelige plads */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 20%;
-    padding-top: 10%;
-    padding-bottom: 20%;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 100%;
-}
-
-.form-logo {
-    margin-bottom: 2rem;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-#spillerlogo {
-    
-        margin-bottom: 2rem;
-        width: 25%;
-        height: auto;
-        align-items: center;
-    }
-
-.form-logo img {
-    width: 50px;
-    height: 50px;
-}
-
-.registration-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    width: 100%;
-}
-.navnfelt{
-    flex-direction: row;
-    display: flex;
-
+    justify-content: center;  /* Centrerer formularen vertikalt */
+    align-items: center;  /* Centrerer formularen horisontalt */
+    padding: 2rem;  /* Lægger mellemrum til omkring formularen */
 }
 
 fieldset {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    border: none;
+    flex-wrap: wrap;  /* Gør at formularen kan wrappe elementerne */
+    gap: 1.5rem;  /* Mellemrum mellem felterne */
+    border: none;  /* Fjerner kantlinjen omkring fieldset */
+    width: 100%;  /* Gør at formularen fylder hele bredden */
+    justify-content: center;  /* Centrerer felterne horisontalt */
 }
 
-legend {
-    font-weight: bold;
-    width: 100%; /* Make legend span across the entire width */
-    margin-bottom: 0.5rem;
-}
-
-label {
+label.labelclass {
     display: flex;
-    flex-direction: column;
-    flex: 1; /* Allow labels to share equal space */
-    gap: 1.5rem;
-}
-input {
- margin-right: 50%;
- font-size: large;
- background-color: #d9d9d93a;
- padding: 0,5rem;
- border-color: #F4BD37;
+    flex-direction: column; /* Placering af label og input vertikalt */
+    width: 45%;  /* Gør label og input lidt bredere */
+    max-width: 250px; /* Begrænser den maksimale bredde af labels */
+    margin-bottom: 1em; /* Mellemrum mellem inputfelter */
 }
 
-select {
-    padding: 0.75rem;
-    font-size: 1rem;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-    width: 100%;
-    border-color: #F4BD37;
+input {
+    width: 100%;  /* Inputfelterne fylder hele bredden */
+    padding: 1em;  /* Giver inputfelterne lidt polstring */
+    margin: 0.5em 0;  /* Mellemrum over og under inputfelterne */
+    border-radius: 5px;  /* Runde kanter på inputfelterne */
+    border: 1px solid #F4BD37;  /* Giver inputfelterne en kantlinje i en gul farve */
+    background: #d9d9d97e;  /* Giver en let grå baggrundsfarve */
+}
+
+li.active {
+    display: none;  /* Skjuler aktive listeelementer */
+}
+
+.bottonconfirm {
+    display: flex;
+    justify-content: center;  /* Centrerer knappen horisontalt */
+    margin-top: 1rem;  /* Mellemrum over knappen */
+}
+
+.bottonsection {
+    display: flex;
+    gap: 2em;  /* Mellemrum mellem dropdowns */
+    justify-content: center;  /* Centrerer dropdowns horisontalt */
+    margin: 1rem 0;  /* Mellemrum omkring dropdown-sektionen */
+}
+
+.dropdown {
+    min-width: 15em;  /* Sætter minimumsbredden af dropdowns */
+    margin: 0 auto;  /* Centrerer dropdowns horisontalt */
+    position: relative;  /* For at kunne placere menuen i forhold til dropdown */
 }
 
 button {
-    padding: 0.75rem;
-    font-size: 1rem;
-    color: #ffffff;
-    background-color: #4a4a4a;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    padding: 1rem;  /* Giver knappen polstring */
+    font-size: 1rem;  /* Sætter skriftstørrelsen */
+    color: #ffffff;  /* Hvid tekstfarve */
+    background-color: #4a4a4a;  /* Grå baggrundsfarve */
+    border: none;  /* Fjerner kantlinje */
+    border-radius: 5px;  /* Runde kanter på knappen */
+    cursor: pointer;  /* Skaber en pointer cursor når man hover over knappen */
+    transition: background-color 0.3s ease;  /* Tilføjer overgangseffekt ved hover */
+    width:100%;  /* Gør knappen bred nok til at fylde containeren */
+    max-width: 200px;  /* Sætter en maksimal bredde på knappen */
+    margin: 1.5rem 0;  /* Mellemrum omkring knappen */
+    text-align: center;  /* Centrerer teksten inde i knappen */
 }
 
 button:hover {
-    background-color: #333333;
+    background-color: #6a6a6a;  /* Ændrer baggrundsfarven lidt lysere ved hover */
 }
 
-/* Responsive layout */
+form .registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;  /* Mellemrum mellem formularfelterne */
+    width: 100%;  /* Gør at formularen fylder hele bredden */
+    max-width: 1200px;  /* Sætter en maksimal bredde på formularen */
+    padding: 0 2rem;  /* Lægger padding omkring formularen */
+}
+
+.form-logo {
+    margin-bottom: 2rem;  /* Mellemrum under logoet */
+    display: flex;
+    justify-content: center;  /* Centrerer logoet horisontalt */
+    margin-top: 6rem;  /* Mellemrum ovenover logoet */
+}
+
+#spillerlogo {
+    width: 50%;  /* Sætter logoets bredde til 50% af containeren */
+    height: auto;  /* Bevarer logoets aspektforhold */
+    margin-bottom: 2rem;  /* Mellemrum under logoet */
+    align-items: center;  /* Centrerer logoet */
+}
+
+.inputemail {
+    margin-top: 1.5em;  /* Mellemrum over inputfeltet for email */
+    width: 100%;  /* Gør email-inputfeltet bredt */
+}
+
+.footerbox {
+    display: flex;
+}
+
+#footer {
+    display: flex;
+}
+
+.menu {
+    list-style: none;  /* Fjerner punkttegn fra listen */
+    padding: 0.2em 0.5em;  /* Lægger lidt polstring til menuen */
+    background: #D9D9D9;  /* Lys grå baggrundsfarve */
+    border: 1px #F4BD37 solid;  /* Gul kant omkring menuen */
+    box-shadow: 0 0.5em 1em #74747473;  /* Let skygge omkring menuen */
+    border-radius: 0.5em;  /* Runde kanter på menuen */
+    color: #9fa5b5;  /* Grå tekstfarve */
+    position: absolute;  /* Placering af menuen i forhold til dropdown */
+    top: 3em;  /* Placerer menuen lidt under dropdownen */
+    left: 50%;  /* Centrerer menuen horisontalt */
+    width: 100%;  /* Gør menuen bred nok til at fylde containeren */
+    transform: translateX(-50%);  /* Finjusterer placeringen så den er præcist centreret */
+    display: none;  /* Skjuler menuen som standard */
+    z-index: 1;  /* Sørger for at menuen ligger ovenpå andre elementer */
+}
+
+.menu li {
+    padding: 0.7em 0.5em;  /* Lægger lidt polstring til hvert menupunkt */
+    margin: 0.3em 0;  /* Mellemrum mellem menupunkterne */
+    border-radius: 0.5em;  /* Runde kanter på menupunkterne */
+    cursor: pointer;  /* Skaber en pointer cursor på hvert menupunkt */
+    border-color: #F4BD37;  /* Gul kantlinje omkring hvert menupunkt */
+}
+
+li {
+    border: 1px #F4BD37;  /* Gul kant omkring listeelementer */
+}
+
+.menu li:hover {
+    background-color: #ececec;  /* Ændrer baggrundsfarven når man hover over et menupunkt */
+}
+
+.menu-open {
+    display: block;  /* Gør menuen synlig når den åbnes */
+    color: #111111;  /* Ændrer tekstfarven når menuen er åben */
+}
+
+.select {
+    background: #d9d9d9;  /* Grå baggrundsfarve på dropdown */
+    color: #00000088;  /* Semi-transparent sort tekstfarve */
+    display: flex;
+    justify-content: space-between;  /* Placerer pilen og teksten med plads imellem */
+    align-items: center;  /* Centrerer indholdet vertikalt */
+    border-radius: 0.5rem;  /* Runde kanter på dropdown-feltet */
+    padding: 1em;  /* Lægger polstring omkring dropdown-feltet */
+    cursor: pointer;  /* Giver en pointer cursor på dropdown-feltet */
+    transition: background 0.3s;  /* Glidende overgangseffekt for baggrundsfarven */
+}
+
+.emailLabelClass {
+    width: 510px;  /* Sætter bredden af email-labelen */
+}
+
+.navnfelt {
+    max-width: 510px;  /* Sætter en maksimal bredde på navnfeltet */
+}
+
+.caret {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #848484;  /* Pilen (caret) til dropdownen */
+    transition: 0.3s;  /* Glidende overgangseffekt på pilen */
+    display: none;  /* Skjuler pilen som standard */
+}
+
+.caret-rotate {
+    transform: rotate(180deg);  /* Roterer pilen 180 grader når dropdownen åbnes */
+}
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-    fieldset {
-        flex-direction: column; /* Stack fields vertically on small screens */
+    label.labelclass {
+        width: 100%;  /* Gør labelen 100% bred på små skærme */
+    }
+
+    button {
+        width: 100%;  /* Gør knappen 100% bred på små skærme */
+    }
+
+    #spillerlogo {
+        width: 40%;  /* Gør logoet lidt mindre på små skærme */
+    }
+
+    .bottonsection {
+        display: flex;
+        gap: 2em;
+        justify-content: center;
+        margin: 1rem 0;
+        flex-direction: column;  /* Ændrer retningen på dropdowns til kolonnevis */
+    }
+
+    .emailLabelClass {
+        width: 240px;  /* Gør email-labelen mindre på små skærme */
     }
 }
+
+@media (min-width: 1200px) {
+    form.registration-form {
+        padding: 0 4rem;  /* Øger padding på brede skærme */
+    }
+
+    label.labelclass {
+        max-width: 300px;  /* Gør labels lidt smallere på brede skærme */
+    }
+}
+
