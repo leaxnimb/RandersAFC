@@ -158,6 +158,9 @@ p {
     margin-bottom: 1rem;
     color: #000;
     text-align: center;
+    border-top: 2px solid #F4BD37;
+    margin-left: 13.5rem;
+    margin-right: 13.5rem;
 }
 
 .instagram-gallery {
@@ -165,7 +168,7 @@ p {
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 50%;
+    width: 100%;
     overflow: hidden; /* Sørger for, at kun 3 billeder vises */
 }
 

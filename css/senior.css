@@ -92,8 +92,7 @@ p {
 }
 
 .klar {
-    font-size: medium;
-    font-weight:bold
+    font-weight:bold;
 }
 
 .skridtet {
@@ -105,7 +104,7 @@ p {
     font-size: medium;
     font-weight: lighter;
     padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 18px;
 }
 
 /* Generel styling til trainers sektionen */
