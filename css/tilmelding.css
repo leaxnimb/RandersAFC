@@ -147,7 +147,7 @@ p {
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 100%;
+    width: 50%;
     overflow: hidden; /* Sørger for, at kun 3 billeder vises */
 }
 
@@ -198,4 +198,3 @@ p {
     text-align: center;
     padding-bottom: 10px;
 }
-

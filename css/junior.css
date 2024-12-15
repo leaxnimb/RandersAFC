@@ -303,3 +303,16 @@
     text-align: center;
     padding-bottom: 10px;
 }
+
+@media (max-width: 991px) {
+    .coaches-container {
+        display: flex;
+        flex-direction: column; /* Skifter til vertikal visning */
+        align-items: center; /* Centrerer kortene */
+    }
+
+    .coach-card {
+        width: 90%; /* Gør kortene smalere på mindre skærme */
+        max-width: 500px; /* Maksimal bredde på kortene */
+    }
+}

@@ -247,3 +247,23 @@ p {
     text-align: center;
     padding-bottom: 10px;
 }
+
+@media (max-width: 991px) {
+    /* Justering af layout for trænersektionen */
+    .trainer-cards {
+        display: flex;
+        flex-direction: column; /* Stabler kortene vertikalt */
+        align-items: center; /* Centrerer kortene */
+    }
+
+    /* Justering af hvert kort */
+    .card {
+        width: 80%; /* Sætter kortene til at fylde 80% af containeren */
+        margin-bottom: 1rem; /* Mindre afstand mellem kortene */
+    }
+
+    /* Justering af billeder i kortene */
+    .card img {
+        width: 100%; /* Billederne fylder hele kortets bredde */
+    }
+}
