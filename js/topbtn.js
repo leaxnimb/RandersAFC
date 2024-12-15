@@ -1,6 +1,6 @@
 "use strict";
 
-// henter btn:
+// Henter btn i html:
 let mybutton = document.getElementById("myBtn");
 
 // Når bruger scoller x antal px fra top vises knappen
@@ -14,7 +14,7 @@ function scrollFunction() {
         mybutton.style.display = "none";
       }
     } else {
-      mybutton.style.display = "none"; // Skjul knappen for mindre skærme
+      mybutton.style.display = "none"; // Skjuler knappen for mindre skærme
     }
   }
 
@@ -23,3 +23,4 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
