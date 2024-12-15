@@ -24,6 +24,24 @@
         margin-right: 13.5rem;
         line-height: 2;
     }
+
+    /* scroll to top knap */
+
+#myBtn {
+    display: none; /* Gemt by default */
+    width: 2rem;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 3rem; 
+    right: 6rem; 
+    z-index: 99; /* Justeres til front lag */
+    cursor: pointer; /* Makør ved hover */
+  }
+  
+ /*  #myBtn:hover */
+ #myBtn:hover {
+  content: url("../img/icons/skumfingergul.webp"); /* Skifter til et andet billede */
+  transform: scale(1.1); /* Gør knappen lidt større */
+}
     
     .decorated-junior {
         text-align: center;
