@@ -52,6 +52,71 @@ button:hover {
     background-color: #666;
 }
 
+/*Instagram*/
+.instagram h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #000;
+    text-align: center;
+}
+
+.instagram-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Sørger for, at kun 3 billeder vises */
+}
+
+.instagram-images {
+    display: flex;
+    width: calc(3 * 33.33%); /* Containeren skal rumme 3 billeder af gangen */
+    transition: transform 0.5s ease;
+}
+
+.instagram-images img {
+    width: 33.33%; /* Hvert billede tager 1/3 af containerens bredde */
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Knapper */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #F4BD37;
+    color: #000;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.prev:hover, .next:hover {
+    background-color: #e3a82f;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.instagram-handle {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
 @media(max-width: 991px) {
     #status-besked {
         font-size: 1rem; /* Mindre fontstørrelse for at passe til mindre skærme */
