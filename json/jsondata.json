@@ -8,7 +8,6 @@
       "besked": "Din tilmelding til Randers American Football er gået igennem, og vi glæder os til at byde dig velkommen på holdet."
     },
     {
-      "loadingGif": "../img/gif/load.gif",
-      "redirectUrl": "new-page.html"
+      "loadingGif": "../img/gif/load.gif"
     }
 ]
