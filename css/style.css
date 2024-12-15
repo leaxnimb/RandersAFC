@@ -59,7 +59,7 @@ p {
   
  /*  #myBtn:hover */
  #myBtn:hover {
-  content: url("../img/icons/skumfingergul.png"); /* Skifter til et andet billede */
+  content: url("../img/icons/skumfingergul.webp"); /* Skifter til et andet billede */
   transform: scale(1.1); /* Gør knappen lidt større */
 }
   
