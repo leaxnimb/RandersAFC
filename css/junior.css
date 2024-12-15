@@ -74,13 +74,16 @@
 
     .alder {
         padding-bottom: 20px;
+        font-size: 1rem;
     }
      .banen {
         padding-bottom: 20px;
+        font-size: 1rem;
      }
 
     .regler {
         padding-bottom: 20px;
+        font-size: 1rem;
     }
 
     
@@ -181,11 +184,13 @@
 }
 
 .krafter {
+    /*font-weight: 100;
+    font-size: medium;*/
+    font-size: 1rem;
     font-weight: 100;
-    font-size: medium;
     border-bottom: 15px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     margin-left: 13.5rem;
     margin-right: 13.5rem;
 }
@@ -211,6 +216,7 @@
     text-align: left;
     color: #000;
     font-family: Arial, sans-serif;
+    font-size: 1rem;
 }
 
 .parent-info h3 {
@@ -260,8 +266,8 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tilføjet skygge for dybde */
 }
     
- /*lav lige sådan at der kun bliver vidst 3 billeder hver gang og de ikke går udover pilene*/   
-    /* Instagram */
+    
+/* Instagram */
 .instagram h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
@@ -326,6 +332,7 @@
     padding-bottom: 10px;
 }
 
+/*Responsiv til mobil*/
 @media (max-width: 991px) {
     .coaches-container {
         display: flex;

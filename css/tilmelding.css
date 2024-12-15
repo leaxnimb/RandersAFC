@@ -113,44 +113,6 @@ p {
     background-color: black;
 }
 
-/* Responsiv til mobil */
-@media (max-width: 991px) {
-    #introduktion{
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    #economy {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    #pris-billede-container {
-        flex-direction: column;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    #billede {
-        flex: 1 1 100%;
-        order: -1; /* Sørger for at billede kommer før prisoversigt */
-        text-align: center; /* Sørger for centreret tekst og indhold */
-        width: 100%;
-    }
-
-    #billede img {
-        margin: 0 auto; /* Centrerer billedet */
-
-    }
-
-    #prisoversigt {
-        flex: 1 1 100%;
-        order: 0;
-    }
-
-    #tilmelding {
-        margin-top: 1rem; /* Justér margin på mindre skærme */
-    }
-}
 
 /* Instagram */
 .instagram h2 {
@@ -161,6 +123,7 @@ p {
     border-top: 2px solid #F4BD37;
     margin-left: 13.5rem;
     margin-right: 13.5rem;
+    margin-top: 25px;
 }
 
 .instagram-gallery {
@@ -218,4 +181,43 @@ p {
     color: #555;
     text-align: center;
     padding-bottom: 10px;
+}
+
+/* Responsiv til mobil */
+@media (max-width: 991px) {
+    #introduktion{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #economy {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #pris-billede-container {
+        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #billede {
+        flex: 1 1 100%;
+        order: -1; /* Sørger for at billede kommer før prisoversigt */
+        text-align: center; /* Sørger for centreret tekst og indhold */
+        width: 100%;
+    }
+
+    #billede img {
+        margin: 0 auto; /* Centrerer billedet */
+
+    }
+
+    #prisoversigt {
+        flex: 1 1 100%;
+        order: 0;
+    }
+
+    #tilmelding {
+        margin-top: 1rem; /* Justér margin på mindre skærme */
+    }
 }

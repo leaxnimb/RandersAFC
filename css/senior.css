@@ -203,7 +203,7 @@ p {
 
 .instagram h2 {
     font-size: 1.8rem;
-    margin-bottom: 1rem;
+    margin-bottom: 25px;
     color: #000;
     text-align: center;
 }
@@ -258,13 +258,15 @@ p {
 }
 
 .instagram-handle {
-    margin-top: 1rem;
+    margin-top: 20px;
     font-size: 1rem;
     color: #555;
     text-align: center;
     padding-bottom: 10px;
+    margin-bottom: 9px;
 }
 
+/*Responsiv til mobil*/
 @media (max-width: 991px) {
     /* Justering af layout for trænersektionen */
     .trainer-cards {
