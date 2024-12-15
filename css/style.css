@@ -192,6 +192,8 @@ div.polaroid {
   font-size: 1.8rem;
   margin-bottom: 1rem;
   color: #000;
+  text-align: center;
+  border-top: 2px solid #F4BD37;
 }
 
 .instagram-gallery {
