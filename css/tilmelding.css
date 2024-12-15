@@ -48,7 +48,6 @@ aside h1{
 }
 /*styler main content og p*/
 main {
-    max-width: 1200px;
     margin-left: 13%;
     margin-right: 13%;
     padding: 1%;
@@ -98,15 +97,13 @@ p {
 }
 /*Styler knap*/
 .button {
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     background-color: #101110b6;
     color: white;
-    font-size: 1.3rem;
-    padding: 3% 6%;
-    border-color: #F4BD37;
-    border: 30px;
+    font-size: 20px;
+    padding: 12px 50px;
+    border: 2px solid #F4BD37;
     cursor: pointer;
+    margin-top: 15%;
     
 }
 .button#tilmelding:hover {   
