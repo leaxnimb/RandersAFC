@@ -33,9 +33,9 @@ window.onload = function() {
 
             // opretter et nyt element p, og giver en indhold
             const kontaktEmail = document.createElement('p');
-            kontaktEmail.innerHTML = '<img class="icon" src="../img/icons/mail.png" alt="Email"> Email: info@randersafc.dk';
+            kontaktEmail.innerHTML = '<img class="icon" src="../img/icons/mail.webp" alt="Email"> Email: info@randersafc.dk';
             const KontaktTelefon = document.createElement('p');
-            KontaktTelefon.innerHTML = '<img class="icon" src="../img/icons/mobil.png" alt="Telefon"> Telefon: +45 27573842';
+            KontaktTelefon.innerHTML = '<img class="icon" src="../img/icons/mobil.webp" alt="Telefon"> Telefon: +45 27573842';
 
             // Så afsluttes der med append elementer der skabt.
             kontaktSection.appendChild(kontaktHeading);
@@ -50,7 +50,7 @@ window.onload = function() {
 
             // opretter et nyt element p, og giver en indhold
             const addresseText = document.createElement('p');
-            addresseText.innerHTML = '<img class="icon" src="../img/icons/lokation.png" alt="Adresse"> Randers NØ, Mariagervej 180 8930 Randers, Danmark';
+            addresseText.innerHTML = '<img class="icon" src="../img/icons/lokation.webp" alt="Adresse"> Randers NØ, Mariagervej 180 8930 Randers, Danmark';
 
             // Så afsluttes der med append elementer der skabt.
             addresseSection.appendChild(addresseHeading);
