@@ -4,6 +4,7 @@
     src: url(../fonts/Graduate-Regular.ttf);
   }
 
+
 .junior-head img {
     width: 100%;
     }
@@ -243,6 +244,7 @@
     font-size: 1.8rem;
     margin-bottom: 1rem;
     color: #000;
+    text-align: center;
 }
 
 .instagram-gallery {
