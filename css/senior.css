@@ -43,13 +43,14 @@ p {
 }
 
 .decorated-senior {
+
     text-align: center;
     position: relative;
     font-size: 24px; /* Tekststørrelse */
     font-weight: bold; /* Gør teksten fed */
     color: black; /* Tekstfarve */
-    margin: 20px 0; /* Afstand til andre elementer */
-    padding: 20px ; /* Plads omkring teksten */
+    margin: 40px 0; /* Afstand til andre elementer */
+    padding: 30px ; /* Plads omkring teksten */
 }
 
 .decorated-senior::before,
@@ -104,7 +105,7 @@ p {
     font-size: medium;
     font-weight: lighter;
     padding-top: 10px;
-    padding-bottom: 18px;
+    padding-bottom: 90px;
 }
 
 /* Generel styling til trainers sektionen */
@@ -179,20 +180,26 @@ p {
     color: #555;
 }
 
-.btn-tilmelding {
-    background-color: #888;
-    color: #fff;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
+/* Tilmeldingsknap */
+.spillerbtn {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #101110b6;
+    color: white;
+    font-size: 20px;
+    padding: 12px 50px;
+    border-color: #F4BD37;
     cursor: pointer;
-    transition: background-color 0.3s;
-}
+    border-radius: 2px;
+  }
+  
+  .spillerbtn:hover {
+    background-color: black;
+  }
 
-.btn-tilmelding:hover {
-    background-color: #666;
-}
 
 .fang {
     font-size: medium;
