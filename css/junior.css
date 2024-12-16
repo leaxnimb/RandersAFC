@@ -1,345 +1,346 @@
 /*Definerer font*/
 @font-face {
-  font-family: Graduate-Regular;
-  src: url(../fonts/Graduate-Regular.ttf);
-}
-
-.junior-head img {
-  width: 100%;
-}
-
-h1 {
-  font-family: Graduate-Regular;
-  font-size: xx-large;
-}
-
-p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: larger;
-}
-
-.tekst {
-  margin-left: 13.5rem;
-  margin-right: 13.5rem;
-  line-height: 2;
-}
-
-/* scroll to top knap */
-
-#myBtn {
-  display: none; /* Gemt by default */
-  width: 2rem;
-  position: fixed; /* Fixed/sticky position */
-  bottom: 3rem;
-  right: 6rem;
-  z-index: 99; /* Justeres til front lag */
-  cursor: pointer; /* Makør ved hover */
-}
-
-/*  #myBtn:hover */
-#myBtn:hover {
-  content: url("../img/icons/skumfingergul.webp"); /* Skifter til et andet billede */
-  transform: scale(1.1); /* Gør knappen lidt større */
-}
-
-.decorated-junior {
-  text-align: center;
-  position: relative;
-  font-size: 24px; /* Tekststørrelse */
-  font-weight: bold; /* Gør teksten fed */
-  color: black; /* Tekstfarve */
-  margin: 20px 0; /* Afstand til andre elementer */
-  padding: 20px; /* Plads omkring teksten */
-}
-
-.decorated-junior::before,
-.decorated-junior::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 2px; /* Tykkelse på linjerne */
-  background-color: gold; /* Gul farve på linjerne */
-}
-
-.decorated-junior::before {
-  top: 0; /* Øverste linje */
-}
-
-.decorated-junior::after {
-  bottom: 0; /* Nederste linje */
-}
-
-.alder {
-  padding-bottom: 20px;
-  font-size: 1rem;
-}
-.banen {
-  padding-bottom: 20px;
-  font-size: 1rem;
-}
-
-.regler {
-  padding-bottom: 20px;
-  font-size: 1rem;
-}
-
-/* Sektionens styling */
-.coaches {
-  text-align: center;
-  background-color: #fff;
-  padding: 2rem;
-  margin: 1rem auto;
-  max-width: 800px;
-  border-radius: 5px;
-  border-top: 2px solid #f4bd37; /* styler top border*/
-}
-
-.coaches h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-
-/* Styling af hver enkelt kort */
-.coach-card {
-  width: 25rem; /* Samme størrelse som Senior */
-  background-color: #f4bd37;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px; /* Afstand mellem kortene */
-  padding: 1rem;
-  border-radius: 5px;
-}
-
-/* Styling af indholdet i kortene */
-.navne {
-  text-align: center;
-  padding: 10px 20px;
-}
-
-.navne h3 {
-  font-size: larger; /* Ens størrelse som i Senior */
-  font-weight: bold;
-}
-
-.navne p {
-  font-size: larger; /* Ens størrelse som i Senior */
-  font-weight: lighter;
-}
-
-/* Styling til billedet */
-.coach-card img {
-  width: 100%; /* Billedet fylder hele bredden af kortet */
-  height: auto; /* Bevarer billedets proportioner */
-  border-radius: 5px;
-}
-
-/* Layout for kortene samlet */
-.coaches-container {
-  display: flex;
-  flex-direction: row; /* Ensretter kortene i en række */
-  flex-wrap: nowrap; /* Sørger for, at kortene ikke bryder til næste linje */
-  justify-content: space-evenly; /* Giver lige meget plads mellem kortene */
-  gap: 1.5rem; /* Mellemrum mellem kortene */
-  padding-top: 2rem;
-}
-
-/*Knap*/
-.cta {
-  text-align: center;
-  padding: 30px 20px;
-  background-color: #f9f9f9;
-}
-
-.cta h3 {
-  margin-bottom: 10px;
-}
-
-.cta p {
-  margin-bottom: 20px;
-}
-
-.cta-button {
-  background-color: #555;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-.cta-button:hover {
-  background-color: #333;
-}
-
-.thunder-klar {
-  padding-top: 20px;
-  font-size: bold;
-  border-bottom: 20px;
-}
-
-.krafter {
-  font-size: 1rem;
-  font-weight: 100;
-  border-bottom: 15px;
-  padding-top: 10px;
-  padding-bottom: 15px;
-  margin-left: 13.5rem;
-  margin-right: 13.5rem;
-}
-
-/* Forældre-sektion */
-.for-parents {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  padding: 2rem;
-  background-color: #f4bd37; /* Opdateret baggrundsfarve */
-  border-radius: 10px; /* Giver en blødere afrunding */
-  margin: 1rem auto;
-  max-width: 800px; /* Matcher bredden på andre sektioner */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tilføjet skygge for dybde */
-  border-top: 20px;
-}
-
-/* Tekstindhold */
-.parent-info {
-  flex: 1;
-  text-align: left;
-  color: #000;
-  font-family: Arial, sans-serif;
-  font-size: 1rem;
-}
-
-.parent-info h3 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: #000;
-  font-weight: bold;
-}
-
-.parent-info p {
-  margin-bottom: 1rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #333;
-}
-
-/* Knap-styling */
-.parent-button {
-  display: inline-block;
-  padding: 10px 20px; /* Samme padding som cta-button */
-  font-size: 1rem;
-  font-weight: normal; /* Matcher font-weight med cta-button */
-  background-color: #555; /* Matchende baggrundsfarve */
-  color: white; /* Matchende tekstfarve */
-  border: none; /* Fjernet kant */
-  border-radius: 5px; /* Samme radius som cta-button */
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.parent-button:hover {
-  background-color: #444; /* Hover-effekt med mørkere farve */
-}
-
-/* Billedstyling */
-.parent-image {
-  flex: 1;
-  text-align: center;
-}
-
-.parent-image img {
-  width: 100%; /* Billedet fylder hele bredden af sin container */
-  height: auto; /* Bevarer billedets proportioner */
-  border-radius: 10px; /* Øget afrunding for et moderne look */
-  object-fit: cover; /* Sørger for, at billedet passer i containeren uden at strække */
-  max-width: 400px; /* Justeret for at matche skærmbilledet */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tilføjet skygge for dybde */
-}
-
-/* Instagram */
-.instagram h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: #000;
-  text-align: center;
-}
-
-.instagram-gallery {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 100%;
-  overflow: hidden; /* Sørger for, at kun 3 billeder vises */
-}
-
-.instagram-images {
-  display: flex;
-  width: calc(3 * 33.33%); /* Containeren skal rumme 3 billeder af gangen */
-  transition: transform 0.5s ease;
-}
-
-.instagram-images a {
-  display: contents;
-}
-
-.instagram-images img {
-  width: 33.33%; /* Hvert billede tager 1/3 af containerens bredde */
-  object-fit: cover;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-/* Knapper */
-.prev,
-.next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #f4bd37;
-  color: #000;
-  border: none;
-  padding: 0.5rem 1rem;
-  font-size: 1.5rem;
-  cursor: pointer;
-  border-radius: 50%;
-  z-index: 2;
-}
-
-.prev:hover,
-.next:hover {
-  background-color: #e3a82f;
-}
-
-.prev {
-  left: 10px;
-}
-
-.next {
-  right: 10px;
-}
-
-.instagram-handle {
-  margin-top: 1rem;
-  font-size: 1rem;
-  color: #555;
-  text-align: center;
-  padding-bottom: 10px;
-}
-
-/*Responsiv til mobil*/
-@media (max-width: 991px) {
+    font-family: Graduate-Regular;
+    src: url(../fonts/Graduate-Regular.ttf);
+  }
+  
+  .junior-head img {
+    width: 100%;
+  }
+  
+  h1 {
+    font-family: Graduate-Regular;
+    font-size: xx-large;
+  }
+  
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+  }
+  
+  .tekst {
+    margin-left: 216px;
+    margin-right: 216px;
+    line-height: 2;
+  }
+  
+  /* scroll to top knap */
+  
+  #myBtn {
+    display: none; /* Gemt by default */
+    width: 32px;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 48px;
+    right: 96px;
+    z-index: 99; /* Justeres til front lag */
+    cursor: pointer; /* Makør ved hover */
+  }
+  
+  /*  #myBtn:hover */
+  #myBtn:hover {
+    content: url("../img/icons/skumfingergul.webp"); /* Skifter til et andet billede */
+    transform: scale(1.1); /* Gør knappen lidt større */
+  }
+  
+  .decorated-junior {
+    text-align: center;
+    position: relative;
+    font-size: 24px; /* Tekststørrelse */
+    font-weight: bold; /* Gør teksten fed */
+    color: black; /* Tekstfarve */
+    margin: 20px 0; /* Afstand til andre elementer */
+    padding: 20px; /* Plads omkring teksten */
+  }
+  
+  .decorated-junior::before,
+  .decorated-junior::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px; /* Tykkelse på linjerne */
+    background-color: gold; /* Gul farve på linjerne */
+  }
+  
+  .decorated-junior::before {
+    top: 0; /* Øverste linje */
+  }
+  
+  .decorated-junior::after {
+    bottom: 0; /* Nederste linje */
+  }
+  
+  .alder {
+    padding-bottom: 20px;
+    font-size: 16px;
+  }
+  .banen {
+    padding-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .regler {
+    padding-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  /* Sektionens styling */
+  .coaches {
+    text-align: center;
+    background-color: #fff;
+    padding: 32px;
+    margin: 16px auto;
+    max-width: 800px;
+    border-radius: 5px;
+    border-top: 2px solid #f4bd37; /* styler top border*/
+  }
+  
+  .coaches h2 {
+    font-size: 28.8px;
+    margin-bottom: 16px;
+  }
+  
+  /* Styling af hver enkelt kort */
+  .coach-card {
+    width: 400px; /* Samme størrelse som Senior */
+    background-color: #f4bd37;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px; /* Afstand mellem kortene */
+    padding: 16px;
+    border-radius: 5px;
+  }
+  
+  /* Styling af indholdet i kortene */
+  .navne {
+    text-align: center;
+    padding: 10px 20px;
+  }
+  
+  .navne h3 {
+    font-size: larger; /* Ens størrelse som i Senior */
+    font-weight: bold;
+  }
+  
+  .navne p {
+    font-size: larger; /* Ens størrelse som i Senior */
+    font-weight: lighter;
+  }
+  
+  /* Styling til billedet */
+  .coach-card img {
+    width: 100%; /* Billedet fylder hele bredden af kortet */
+    height: auto; /* Bevarer billedets proportioner */
+    border-radius: 5px;
+  }
+  
+  /* Layout for kortene samlet */
   .coaches-container {
     display: flex;
-    flex-direction: column; /* Skifter til vertikal visning */
-    align-items: center; /* Centrerer kortene */
+    flex-direction: row; /* Ensretter kortene i en række */
+    flex-wrap: nowrap; /* Sørger for, at kortene ikke bryder til næste linje */
+    justify-content: space-evenly; /* Giver lige meget plads mellem kortene */
+    gap: 24px; /* Mellemrum mellem kortene */
+    padding-top: 32px;
   }
-
-  .coach-card {
-    width: 90%; /* Gør kortene smalere på mindre skærme */
-    max-width: 500px; /* Maksimal bredde på kortene */
+  
+  /*Knap*/
+  .cta {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #f9f9f9;
   }
-}
+  
+  .cta h3 {
+    margin-bottom: 10px;
+  }
+  
+  .cta p {
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    background-color: #555;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .cta-button:hover {
+    background-color: #333;
+  }
+  
+  .thunder-klar {
+    padding-top: 20px;
+    font-weight: bold;
+    border-bottom: 20px;
+  }
+  
+  .krafter {
+    font-size: 16px;
+    font-weight: 100;
+    border-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-left: 216px;
+    margin-right: 216px;
+  }
+  
+  /* Forældre-sektion */
+  .for-parents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 32px;
+    background-color: #f4bd37; /* Opdateret baggrundsfarve */
+    border-radius: 10px; /* Giver en blødere afrunding */
+    margin: 16px auto;
+    max-width: 800px; /* Matcher bredden på andre sektioner */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tilføjet skygge for dybde */
+    border-top: 20px;
+  }
+  
+  /* Tekstindhold */
+  .parent-info {
+    flex: 1;
+    text-align: left;
+    color: #000;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  .parent-info h3 {
+    font-size: 28.8px;
+    margin-bottom: 16px;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .parent-info p {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  /* Knap-styling */
+  .parent-button {
+    display: inline-block;
+    padding: 10px 20px; /* Samme padding som cta-button */
+    font-size: 16px;
+    font-weight: normal; /* Matcher font-weight med cta-button */
+    background-color: #555; /* Matchende baggrundsfarve */
+    color: white; /* Matchende tekstfarve */
+    border: none; /* Fjernet kant */
+    border-radius: 5px; /* Samme radius som cta-button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .parent-button:hover {
+    background-color: #444; /* Hover-effekt med mørkere farve */
+  }
+  
+  /* Billedstyling */
+  .parent-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .parent-image img {
+    width: 100%; /* Billedet fylder hele bredden af sin container */
+    height: auto; /* Bevarer billedets proportioner */
+    border-radius: 10px; /* Øget afrunding for et moderne look */
+    object-fit: cover; /* Sørger for, at billedet passer i containeren uden at strække */
+    max-width: 400px; /* Justeret for at matche skærmbilledet */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tilføjet skygge for dybde */
+  }
+  
+  /* Instagram */
+  .instagram h2 {
+    font-size: 28.8px;
+    margin-bottom: 16px;
+    color: #000;
+    text-align: center;
+  }
+  
+  .instagram-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Sørger for, at kun 3 billeder vises */
+  }
+  
+  .instagram-images {
+    display: flex;
+    width: calc(3 * 33.33%); /* Containeren skal rumme 3 billeder af gangen */
+    transition: transform 0.5s ease;
+  }
+  
+  .instagram-images a {
+    display: contents;
+  }
+  
+  .instagram-images img {
+    width: 33.33%; /* Hvert billede tager 1/3 af containerens bredde */
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Knapper */
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f4bd37;
+    color: #000;
+    border: none;
+    padding: 8px 16px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: #e3a82f;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .instagram-handle {
+    margin-top: 16px;
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+  /*Responsiv til mobil*/
+  @media (max-width: 991px) {
+    .coaches-container {
+      display: flex;
+      flex-direction: column; /* Skifter til vertikal visning */
+      align-items: center; /* Centrerer kortene */
+    }
+  
+    .coach-card {
+      width: 90%; /* Gør kortene smalere på mindre skærme */
+      max-width: 500px; /* Maksimal bredde på kortene */
+    }
+  }
+  
