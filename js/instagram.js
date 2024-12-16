@@ -1,6 +1,7 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const slider = document.querySelector('.instagram-images');
-    const images = document.querySelectorAll('.instagram-images img');
+"use strict";
+document.addEventListener('DOMContentLoaded', () => { /*koden først køres når hele HTML'en er blevet indlæst*/
+    const slider = document.querySelector('.instagram-images'); 
+    const images = document.querySelectorAll('.instagram-images img'); /*Henter alle billed-elementer inde i .instagram-images */
     const prevButton = document.querySelector('.prev');
     const nextButton = document.querySelector('.next');
 
@@ -12,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         slider.style.transform = `translateX(${translateX}%)`;
     }
 
-    prevButton.addEventListener('click', () => {
+    prevButton.addEventListener('click', () => { /*Tilføjer en klik-hændelse til "forrige"-knappen*/
         if (currentIndex > 0) {
             currentIndex--;
             updateSlider();
@@ -22,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    nextButton.addEventListener('click', () => {
+    nextButton.addEventListener('click', () => { /*Tilføjer en klik-hændelse til "næste"-knappen*/
         if (currentIndex < maxIndex) {
             currentIndex++;
             updateSlider();

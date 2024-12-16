@@ -700,5 +700,17 @@ p {
       width: 90%; /* Gør kortene smalere på mindre skærme */
       max-width: 500px; /* Maksimal bredde på kortene */
     }
+
+    .tekst{
+        margin-left: 5%;
+        margin-right: 5%;
+        line-height: 2;
+    }
+
+    .decorated-junior {
+        margin-left: 5%;
+        margin-right: 5%;
+        line-height: 2;
+    }
   }
   
