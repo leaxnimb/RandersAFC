@@ -69,11 +69,11 @@ li.active {
 
 button {
     padding: 1rem;  /* Giver knappen polstring */
-    font-size: 1rem;  /* Sætter skriftstørrelsen */
+    font-size: 20px;  /* Sætter skriftstørrelsen */
     color: #ffffff;  /* Hvid tekstfarve */
-    background-color: #4a4a4a;  /* Grå baggrundsfarve */
-    border: none;  /* Fjerner kantlinje */
-    border-radius: 5px;  /* Runde kanter på knappen */
+    background-color: #101110b6;  /* Grå baggrundsfarve */
+    border-color: #F4BD37;
+    border-radius: 0px;  /* Kanter på knappen */
     cursor: pointer;  /* Skaber en pointer cursor når man hover over knappen */
     transition: background-color 0.3s ease;  /* Tilføjer overgangseffekt ved hover */
     width:100%;  /* Gør knappen bred nok til at fylde containeren */
@@ -83,7 +83,7 @@ button {
 }
 
 button:hover {
-    background-color: #6a6a6a;  /* Ændrer baggrundsfarven lidt lysere ved hover */
+    background-color: black;  /* Ændrer baggrundsfarven lidt lysere ved hover */
 }
 
 form .registration-form {
