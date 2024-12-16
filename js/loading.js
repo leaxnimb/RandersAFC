@@ -1,4 +1,3 @@
-
 "use strict";
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -20,7 +19,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     `;
     document.body.appendChild(loader);
   
-    // Skjul loader efter 3 sekunder
+    // Skjul loader efter 1.5 sekunder
     setTimeout(() => {
       loader.style.display = "none";
     }, 1500);
