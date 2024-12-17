@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 ```
 
-
+----------------
 ## Img Slider
 
 ### Funktionalitet
