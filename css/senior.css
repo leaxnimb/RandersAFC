@@ -292,6 +292,12 @@ p {
         margin-bottom: 1rem; /* Mindre afstand mellem kortene */
     }
 
+    .tekst{
+        margin-left: 5%;
+        margin-right: 5%;
+        line-height: 2;
+    }
+
     /* Justering af billeder i kortene */
     .card img {
         width: 100%; /* Billederne fylder hele kortets bredde */
