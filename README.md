@@ -8,6 +8,49 @@ I dette projekt....
 - Img slider
 - Dropdown
 
+## Scroll-to-top
+
+### Funktionalitet
+Scroll-to-top funktionen er en knap, som gør det muligt at komme til toppen af siden med ét klik. Knappen bliver synlig ved >500 px scroll på siden. Knappen inkluderer to images, som skiftes ud ved hover.
+
+### Struktur
+Featuren består af tre filer
+1.**HTML** Består af et enkelt img block-element i body med src, alt, on-click, id og title.
+2.**CSS** Definere img/knappens placering, størrelse samt hover effekt.
+3.**JavaScript** Sætter scroll-to-top funktionen
+
+### **JavaScript (topbtn.js)**
+Her er metoden scroll-to-top er kodet ved hjælp af JacaScript
+
+```javascript
+"use strict";
+
+// Henter btn i html:
+let mybutton = document.getElementById("myBtn");
+
+// Når bruger scoller x antal px fra top vises knappen
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (window.innerWidth > 991) { // Kun hvis skærmen er større end 991px
+      if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    } else {
+      mybutton.style.display = "none"; // Skjuler knappen for mindre skærme
+    }
+  }
+
+// Når brugeren klikker på knappen, scrolles til toppen for browsere:
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+```
+
+
 
 ## Loading
 
@@ -99,5 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
             updateSlider();}   
     });
 });
+
+
 
 
