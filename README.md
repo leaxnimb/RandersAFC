@@ -54,6 +54,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     }, 1500);
 });
 ```
+
+
 ## Img Slider
 
 ### Funktionalitet
@@ -109,5 +111,5 @@ document.addEventListener('DOMContentLoaded', () => {
             updateSlider();}   
     });
 });
-
+```
 
