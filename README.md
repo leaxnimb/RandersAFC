@@ -57,6 +57,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 
 ### **JavaScript (instagram.js)**
+Her er metoden instagram slideren er kodet ved hjælp af javascript.
+
 ```javascript
 /*koden køres når hele HTML'en er blevet indlæst*/
 document.addEventListener('DOMContentLoaded', () => { 
@@ -86,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
             updateSlider();
         }
     });
-    
+
     /*Tilføjer en klik-hændelse til "næste"-knappen*/
     nextButton.addEventListener('click', () => { 
         if (currentIndex < maxIndex) {
