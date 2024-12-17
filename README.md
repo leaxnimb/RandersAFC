@@ -53,6 +53,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       loader.style.display = "none";
     }, 1500);
 });
+```
+
 
 ### **JavaScript (instagram.js)**
 ```javascript
