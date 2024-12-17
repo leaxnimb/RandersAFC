@@ -58,21 +58,26 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 ### **JavaScript (instagram.js)**
 ```javascript
-document.addEventListener('DOMContentLoaded', () => { /*koden først køres når hele HTML'en er blevet indlæst*/
+/*koden køres når hele HTML'en er blevet indlæst*/
+document.addEventListener('DOMContentLoaded', () => { 
     const slider = document.querySelector('.instagram-images'); 
-    const images = document.querySelectorAll('.instagram-images img'); /*Henter alle billed-elementer inde i .instagram-images */
+    /*Henter alle billed-elementer inde i .instagram-images */
+    const images = document.querySelectorAll('.instagram-images img'); 
     const prevButton = document.querySelector('.prev');
     const nextButton = document.querySelector('.next');
 
     let currentIndex = 0;
-    const maxIndex = images.length - 3; // Antallet af billeder minus dem, der vises på én gang (3)
+    /*Antallet af billeder minus dem, der vises på én gang (3)*/
+    const maxIndex = images.length - 3;
 
     function updateSlider() {
-        const translateX = -currentIndex * (100 / 3); // Flytter med 1/3 af bredden pr. klik
+        /*Flytter med 1/3 af bredden pr. klik*/
+        const translateX = -currentIndex * (100 / 3); 
         slider.style.transform = `translateX(${translateX}%)`;
     }
 
-    prevButton.addEventListener('click', () => { /*Tilføjer en klik-hændelse til "forrige"-knappen*/
+    /*Tilføjer en klik-hændelse til "forrige"-knappen*/
+    prevButton.addEventListener('click', () => { 
         if (currentIndex > 0) {
             currentIndex--;
             updateSlider();
@@ -81,8 +86,9 @@ document.addEventListener('DOMContentLoaded', () => { /*koden først køres når
             updateSlider();
         }
     });
-
-    nextButton.addEventListener('click', () => { /*Tilføjer en klik-hændelse til "næste"-knappen*/
+    
+    /*Tilføjer en klik-hændelse til "næste"-knappen*/
+    nextButton.addEventListener('click', () => { 
         if (currentIndex < maxIndex) {
             currentIndex++;
             updateSlider();
