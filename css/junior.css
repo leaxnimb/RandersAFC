@@ -386,6 +386,7 @@ p {
     transform: scale(1.1); /* Gør knappen lidt større */
   }
   
+  /*Giver de lange gule streger*/
   .decorated-junior {
     text-align: center;
     position: relative;
@@ -414,6 +415,7 @@ p {
     bottom: 0; /* Nederste linje */
   }
   
+  /*Tekst*/
   .alder {
     padding-bottom: 20px;
     font-size: 16px;
