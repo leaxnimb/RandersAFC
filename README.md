@@ -1,5 +1,5 @@
 # RandersAFC
-I dette projekt....
+I dette projekt har vi arbejdet med en amerikansk fodboldklub i Randers ved navn RandersAFC. Vi har arbejdet med nogle forskellige features som kan ses nedenfor
 
 ## Features
 
