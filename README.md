@@ -98,6 +98,18 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 ```
 
+----------------
+## Img Slider
+
+### Funktionalitet
+
+Loading-funktionen viser en loader på siden, mens den indlæses. Den inkluderer en animeret GIF og en tekst, der beder brugeren om at vente. Loaderen fjernes automatisk efter 1,5 sekunder.
+
+### Struktur
+
+Featuren består af tre filer:
+1. **JavaScript**: Img slideren og dens indhold tilføjes dynamisk til body-elementet ved hjælp af JavaScript.
+2. **CSS**: Definerer udseendet og layoutet af loaderen, herunder centrering af indholdet, kasse og navigationsknapper.
 
 ### **JavaScript (instagram.js)**
 Her er metoden instagram slideren er kodet ved hjælp af javascript.
@@ -142,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
             updateSlider();}   
     });
 });
-
+```
 
 
 
