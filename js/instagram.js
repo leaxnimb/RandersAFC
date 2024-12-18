@@ -32,3 +32,4 @@ document.addEventListener('DOMContentLoaded', () => { /*koden først køres når
             updateSlider();}   
     });
 });
+
