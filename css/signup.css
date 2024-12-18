@@ -195,7 +195,7 @@ li {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     label.labelclass {
         width: 100%;  /* Gør labelen 100% bred på små skærme */
     }
