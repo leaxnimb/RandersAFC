@@ -2,13 +2,28 @@
     font-family: Graduate-Regular;
     src: url(../fonts/Graduate-Regular.ttf);
 }
+#myBtn {
+    display: none; /* Gemt by default */
+    width: 2rem;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 3rem;
+    right: 6rem;
+    z-index: 99; /* Justeres til front lag */
+    cursor: pointer; /* Makør ved hover */
+  }
+  
+  /*  #myBtn:hover */
+  #myBtn:hover {
+    content: url("../img/icons/skumfingergul.webp"); /* Skifter til et andet billede */
+    transform: scale(1.1); /* Gør knappen lidt større */
+  }
 
 .galleri-info {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
     margin-top: 100px;
 }
 
@@ -16,6 +31,7 @@
     text-align: center;
     font-size: 24px; /* Tekststørrelse */
     font-weight: bold; /* Gør teksten fed */
+    font-family: Arial, sans-serif;
     color: black; /* Tekstfarve */
     margin: 20px auto; /* Centrer og tilføj afstand */
     padding: 20px; /* Plads omkring teksten */
@@ -40,4 +56,44 @@
     padding-top: 5px;
     margin: 10px 20px;
     line-height: 1.5;
+}
+
+.indblik {
+    font-size: 1rem;
+    font-weight: 100;
+    padding-top: 5px;
+    margin: 10px 20px;
+    line-height: 1.5;
+}
+
+/* Containeren til galleriet */
+.opsaetning {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tre kolonner i galleriet */
+    gap: 20px; /* Afstand mellem billederne */
+    max-width: 1200px; /* Maksimal bredde for containeren */
+    margin: 0 auto; /* Centrerer galleriet */
+    padding: 20px; /* Indvendig afstand */
+}
+
+/* Styling af billederne */
+.opsaetning img {
+    max-width: 100%; /* Billedet fylder maksimalt sin container */
+    height: auto; /* Bevarer billedets proportioner */
+    object-fit: cover; /* Fylder billedet pænt inden for containeren */
+    border-radius: 8px; /* Bløde hjørner (valgfrit) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tilføjer en skygge for flot effekt */
+    transition: transform 0.3s ease; /* Effekt ved hover */
+}
+
+/* Effekter ved hover */
+.opsaetning img:hover {
+    transform: scale(1.05); /* Zoomer billedet en smule ind */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Større skygge ved hover */
+}
+
+/* Ekstra styling til billedcontainer */
+.opsaetning-item {
+    overflow: hidden; /* Skjuler overskydende billedindhold */
+    aspect-ratio: 3 / 4; /* Forholder sig til en bestemt højde-bredde-ratio */
 }
