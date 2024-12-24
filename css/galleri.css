@@ -24,21 +24,21 @@
     align-items: center;
     flex-direction: column;
     margin-bottom: 5px;
-    margin-top: 100px;
+    margin-top: 90px;
 }
 
 .text-box {
     text-align: center;
-    font-size: 24px; /* Tekststørrelse */
-    font-weight: bold; /* Gør teksten fed */
+    font-size: 24px; 
+    font-weight: bold; 
     font-family: Arial, sans-serif;
-    color: black; /* Tekstfarve */
-    margin: 20px auto; /* Centrer og tilføj afstand */
-    padding: 20px; /* Plads omkring teksten */
-    background-color: #f4bd37; /* Gul baggrund */
+    color: black; 
+    margin: 20px auto; 
+    padding: 20px; 
+    background-color: #f4bd37; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-    border-radius: 10px; /* Gør hjørner runde */
-    max-width: 80%; /* Begræns bredden */
+    border-radius: 10px; 
+    max-width: 80%; 
     position: relative;
     z-index: 1;
 }
@@ -70,30 +70,31 @@
 .opsaetning {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Tre kolonner i galleriet */
-    gap: 20px; /* Afstand mellem billederne */
-    max-width: 1200px; /* Maksimal bredde for containeren */
+    gap: 20px; 
+    max-width: 1200px; 
     margin: 0 auto; /* Centrerer galleriet */
-    padding: 20px; /* Indvendig afstand */
+    padding: 20px; 
+    margin-bottom: 10px;
 }
 
 /* Styling af billederne */
 .opsaetning img {
     max-width: 100%; /* Billedet fylder maksimalt sin container */
-    height: auto; /* Bevarer billedets proportioner */
+    height: auto; 
     object-fit: cover; /* Fylder billedet pænt inden for containeren */
-    border-radius: 8px; /* Bløde hjørner (valgfrit) */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tilføjer en skygge for flot effekt */
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s ease; /* Effekt ved hover */
 }
 
 /* Effekter ved hover */
 .opsaetning img:hover {
     transform: scale(1.05); /* Zoomer billedet en smule ind */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Større skygge ved hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 /* Ekstra styling til billedcontainer */
 .opsaetning-item {
-    overflow: hidden; /* Skjuler overskydende billedindhold */
+    overflow: hidden; 
     aspect-ratio: 3 / 4; /* Forholder sig til en bestemt højde-bredde-ratio */
 }
