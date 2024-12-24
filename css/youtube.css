@@ -1,0 +1,13 @@
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .video-container iframe {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16/9; /* Holder forholdet mellem bredde og højde */
+  }
+  

@@ -1,0 +1,33 @@
+@font-face {
+    font-family: Graduate-Regular;
+    src: url(../fonts/Graduate-Regular.ttf);
+  }
+
+.galleri-info{
+  text-align: center;
+  position: relative;
+  font-size: 24px; /* Tekststørrelse */
+  font-weight: bold; /* Gør teksten fed */
+  color: black; /* Tekstfarve */
+  margin: 20px 0; /* Afstand til andre elementer */
+  padding: 20px; /* Plads omkring teksten */ 
+  background-color: #f4bd37;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.velkommen {
+    padding-top: 20px;
+    font-weight: bold;
+    border-bottom: 20px; 
+}
+
+.socialt {
+    font-size: 1rem;
+  font-weight: 100;
+  border-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  margin-left: 13.5rem;
+  margin-right: 13.5rem;
+  margin-bottom: 100px;
+}
