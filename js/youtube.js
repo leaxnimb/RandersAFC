@@ -1,7 +1,7 @@
 "use strict";
 const videoUrl = "https://youtu.be/Lhka0pjBzAQ";
     // Erstat dette med det ønskede video-URL
-const videoId = "dQw4w9WgXcQ"; // Erstat dette med det ønskede video-ID
+const videoId = "Lhka0pjBzAQ"; // Erstat dette med det ønskede video-ID
 
     // Containeren, hvor videoen skal indsættes
     const videoContainer = document.getElementById("video-placeholder");

@@ -1,33 +1,43 @@
 @font-face {
     font-family: Graduate-Regular;
     src: url(../fonts/Graduate-Regular.ttf);
-  }
+}
 
-.galleri-info{
-  text-align: center;
-  position: relative;
-  font-size: 24px; /* Tekststørrelse */
-  font-weight: bold; /* Gør teksten fed */
-  color: black; /* Tekstfarve */
-  margin: 20px 0; /* Afstand til andre elementer */
-  padding: 20px; /* Plads omkring teksten */ 
-  background-color: #f4bd37;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.galleri-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.text-box {
+    text-align: center;
+    font-size: 24px; /* Tekststørrelse */
+    font-weight: bold; /* Gør teksten fed */
+    color: black; /* Tekstfarve */
+    margin: 20px auto; /* Centrer og tilføj afstand */
+    padding: 20px; /* Plads omkring teksten */
+    background-color: #f4bd37; /* Gul baggrund */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    border-radius: 10px; /* Gør hjørner runde */
+    max-width: 80%; /* Begræns bredden */
+    position: relative;
+    z-index: 1;
 }
 
 .velkommen {
-    padding-top: 20px;
+    margin: 0;
+    padding: 10px 0;
     font-weight: bold;
-    border-bottom: 20px; 
+    margin-bottom: 10px;
 }
 
 .socialt {
     font-size: 1rem;
-  font-weight: 100;
-  border-bottom: 15px;
-  padding-top: 10px;
-  padding-bottom: 0px;
-  margin-left: 13.5rem;
-  margin-right: 13.5rem;
-  margin-bottom: 100px;
+    font-weight: 100;
+    padding-top: 5px;
+    margin: 10px 20px;
+    line-height: 1.5;
 }
