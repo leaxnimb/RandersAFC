@@ -20,7 +20,7 @@ body {
 /* indsætter font */
 h1 {
     font-family: Graduate-Regular;
-    font-size: xx-large;
+    font-size: xxx-large;
 }
 
 p {
@@ -35,7 +35,7 @@ p {
     line-height: 2;
 }
 
-/* h1 */
+/* h1 + h2 */
 .decorated-text {
     text-align: center;
     position: relative;
@@ -64,9 +64,17 @@ p {
     bottom: 0; /* Nederste linje */
 }
 
+/* h2 */
+#h2{
+    font-family: Graduate-Regular;
+    font-size: x-large;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
 
 
-/* Scroll to top */
+/* scroll to top knap */
+
 #myBtn {
     display: none; /* Gemt by default */
     width: 2rem;
@@ -138,8 +146,12 @@ p {
     margin-left: 2%;
   }
 
-  .info{
+  .intro{
     display: flex;
-    justify-content: center;
-    padding-top: 2%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro p{
+    line-height: 2rem;
   }
