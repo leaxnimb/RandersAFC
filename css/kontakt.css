@@ -1,0 +1,197 @@
+
+/*Definerer font*/
+@font-face {
+    font-family: Graduate-Regular;
+    src: url(../fonts/Graduate-Regular.ttf);
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes full height of the screen */
+}
+h1, h2, h3 {
+    font-family: 'Graduate-Regular', sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+
+}
+
+.kontakt-container {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 20px 20px 20px;
+    margin: 120px 5px 20px 5px;
+    background: url('../img/kontakt-bg.webp') no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Needed for pseudo-element */
+    overflow: hidden; /* Ensures the overlay stays within the container */
+}
+
+.kontakt-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(232, 232, 232, 0.5); /* White fill with 40% transparency */
+    z-index: 1; /* Places it behind the content but above the background */
+}
+
+.kontakt-formular,
+.kontakt-info {
+    position: relative; /* Keeps these elements above the overlay */
+    z-index: 2;
+}
+
+.kontakt-formular {
+    flex: 1;
+    margin-right: 25px;
+}
+
+.kontakt-formular h2 {
+    font-weight: bold;
+}
+
+.kontakt-formular p {
+    margin-bottom: 20px;
+}
+
+.kontakt-formular label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.kontakt-formular input,
+.kontakt-formular textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.kontakt-formular button {
+    padding: 10px 20px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.kontakt-formular button:hover {
+    background-color: #333;
+}
+
+.kontakt-info {
+    flex: 1;
+    background-color: rgba(255, 204, 51, 0.9);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.kontakt-info h2 {
+    font-weight: bold;
+    margin: 0px 0px 0px 10px;
+}
+
+.kontakt-info p {
+    margin: 10px 10px 10px 10px;
+    line-height: 2;
+}
+
+.kontakt-info a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.kontakt-info a:hover {
+    text-decoration: underline;
+}
+
+.besked {
+    height: 100px;
+}
+
+
+@media (min-width: 1040px) {
+    .kontakt-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 200px 0px 300px 20px;
+        margin: 80px 5px 20px 5px;
+        background: url('../img/kontakt-bg.webp') no-repeat center center;
+        background-size: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: relative; /* Needed for pseudo-element */
+        overflow: hidden; /* Ensures the overlay stays within the container */
+    }
+
+    .besked {
+        height: 200px;
+    }
+}
+
+@media (min-width: 991px) {
+    .kontakt-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 80px 15% 20px 15%;
+        background: url('../img/kontakt-bg.webp') no-repeat center center;
+        background-size: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: relative; /* Needed for pseudo-element */
+        overflow: hidden; /* Ensures the overlay stays within the container */
+    }
+
+    .kontakt-info {
+        flex: 1;
+        background-color: rgba(255, 204, 51, 0.9);
+        padding: 20px;
+        border-radius: 5px;
+        margin-top: 90px;
+    }
+ 
+}
+
+@media (max-width: 768px) {
+    .kontakt-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .kontakt-info {
+        flex: 1;
+        background-color: rgba(255, 204, 51, 0.9);
+        padding: 40px;
+        border-radius: 5px;
+    }
+
+    .kontakt-info {
+        margin-top: 20px;
+    }
+
+    .kontakt-formular {
+        flex: 1;
+        margin-right: 0px;
+    }
+}
