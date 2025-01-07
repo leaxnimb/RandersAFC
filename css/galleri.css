@@ -24,7 +24,7 @@
     align-items: center;
     flex-direction: column;
     margin-bottom: 5px;
-    margin-top: 90px;
+    margin-top: 70px;
 }
 
 .text-box {
@@ -35,9 +35,9 @@
     color: black; 
     margin: 20px auto; 
     padding: 20px; 
-    background-color: #f4bd37; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-    border-radius: 10px; 
+    /*background-color: transparent; /* Ingen baggrund */
+    /*box-shadow: none; /* Ingen skygge */
+    border-radius: 0; /* Fjerner afrundede hjørner*/ 
     max-width: 80%; 
     position: relative;
     z-index: 1;
@@ -45,17 +45,28 @@
     margin-right: 13.5rem;
 }
 
+
 .velkommen {
-    margin: 0;
-    padding: 10px 0;
+    margin: 0; 
+    padding: 10px 0; 
     font-weight: bold;
     margin-bottom: 10px;
+    border-radius: 0; /* Fjern afrundede hjørner */
+    border-bottom: 2px solid #f4bd37; /* Styler den gule linje */
+    width: 100vw; /* Får linjen til at strække sig over hele skærmens bredde */
+    position: relative; 
+    left: 50%; /* Flytter linjen til midten */
+    transform: translateX(-50%); /* Justerer for at centrere på skærmen */
+    font-family: Graduate-Regular;
+    font-size: xx-large;
+    padding-bottom: 10px;
 }
+
 
 .socialt {
     font-size: 1rem;
     font-weight: 100;
-    padding-top: 5px;
+    padding-top: 10px;
     margin: 10px 20px;
     line-height: 1.5;
     margin-left: 10px;
@@ -63,6 +74,37 @@
     font-family: Arial, sans-serif;
     font-size: 1rem;
 }
+
+.video {
+    display: flex; /* Sikrer fleksibel visning */
+    justify-content: center; /* Centrerer indholdet */
+    width: 100%; /* Fylder hele containerens bredde */
+    margin: 0 auto; /* Centrerer containeren */
+    padding: 0; /* Ingen ekstra mellemrum */
+    
+}
+
+.video-container {
+    width: 100%; /* Fylder hele bredden */
+    max-width: 1200px; /* Sætter en maks. bredde */
+    margin: 0 auto; /* Centrerer indholdet */
+    position: relative; /* Bevarer layout */
+    padding-bottom: 35px;
+    padding-top: 5px;
+}
+
+#video-placeholder iframe {
+    width: 100%; /* Gør iframe tilpasset containerens bredde */
+    height: auto; /* Bevarer højden i forhold til bredden */
+}
+
+.mere-info {
+    border-top: 2px solid #f4bd37; /* Gul streg */
+    width: 80%; /* Juster bredden af den gule streg */
+    margin: 0 auto; /* Centrerer stregen */
+    padding-bottom: 10px; /* Giver afstand under stregen */
+}
+
 
 .indblik {
     font-size: 1rem;
