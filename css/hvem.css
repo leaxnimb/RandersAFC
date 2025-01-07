@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    padding-top: 80px; /* Juster denne værdi til højden af din header */
+}
+
+
+/*Definerer font*/
+@font-face {
+  font-family: Graduate-Regular;
+  src: url(../fonts/Graduate-Regular.ttf);
+}
+
+/* indsætter font */
+h1 {
+    font-family: Graduate-Regular;
+    font-size: xx-large;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+
+}
+
+.tekst{
+    margin-left: 13.5rem;
+    margin-right: 13.5rem;
+    line-height: 2;
+}
+
+/* h1 */
+.decorated-text {
+    text-align: center;
+    position: relative;
+    font-size: 24px; /* Tekststørrelse */
+    font-weight: bold; /* Gør teksten fed */
+    color: black; /* Tekstfarve */
+    margin: 20px 0; /* Afstand til andre elementer */
+    padding: 20px ; /* Plads omkring teksten */
+}
+
+.decorated-text::before,
+.decorated-text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px; /* Tykkelse på linjerne */
+    background-color: gold; /* Gul farve på linjerne */
+}
+
+.decorated-text::before {
+    top: 0; /* Øverste linje */
+}
+
+.decorated-text::after {
+    bottom: 0; /* Nederste linje */
+}
+
+
+
+/* Scroll to top */
+#myBtn {
+    display: none; /* Gemt by default */
+    width: 2rem;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 3rem; 
+    right: 6rem; 
+    z-index: 99; /* Justeres til front lag */
+    cursor: pointer; /* Makør ved hover */
+  }
+  
+ /*  #myBtn:hover */
+ #myBtn:hover {
+  content: url("../img/icons/skumfingergul.webp"); /* Skifter til et andet billede */
+  transform: scale(1.1); /* Gør knappen lidt større */
+}
+
+
+/* første section */
+
+.bstrman {
+    width: 100%;
+    padding-right: 7%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2rem;
+    margin-left: 13.5rem;
+    margin-right: 13.5rem;
+}
+
+.container p{
+    line-height: 2;
+}
+
+
+/* træner section style */
+.coaches{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-left: 13.5rem;
+    margin-right: 13.5rem;
+}
+
+
+.polaroid {
+    width: 25rem;
+    background-color: #F4BD37;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    padding: 1rem;
+  }
+
+  #venstre{
+    margin-right: 2%;
+  }
+
+  #midt{
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  #højre{
+    margin-left: 2%;
+  }
+
+  .info{
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+  }
