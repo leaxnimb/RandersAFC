@@ -37,6 +37,7 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative; /* Needed for pseudo-element */
     overflow: hidden; /* Ensures the overlay stays within the container */
+    border:2px solid rgba(255, 204, 51, 0.9)
 }
 
 .kontakt-container::before {
@@ -46,9 +47,10 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(232, 232, 232, 0.5); /* White fill with 40% transparency */
-    z-index: 1; /* Places it behind the content but above the background */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.904), rgba(0, 0, 0, 0.127));
+    z-index: 1;
 }
+
 
 .kontakt-formular,
 .kontakt-info {
@@ -63,10 +65,14 @@ p {
 
 .kontakt-formular h2 {
     font-weight: bold;
+    display: flex;
+    justify-content: center;
 }
 
 .kontakt-formular p {
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .kontakt-formular label {
