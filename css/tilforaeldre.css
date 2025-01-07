@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+main {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+/* Styling af to-top-knap */
+#myBtn {
+  display: none; /* Gemt by default */
+  width: 2rem;
+  position: fixed; /* Fixed/sticky position */
+  bottom: 3rem; 
+  right: 6rem; 
+  z-index: 99; /* Justeres til front lag */
+  cursor: pointer; /* Makør ved hover */
+}
+
+/*  #myBtn:hover */
+#myBtn:hover {
+content: url("../img/icons/skumfingergul.webp"); /* Skifter til et andet billede */
+transform: scale(1.1); /* Gør knappen lidt større */
+}
+aside h1{
+  text-align: center;
+  background-color: #ffffff;
+  padding: 1rem 0;
+  border-top: 2px solid #F4BD37;
+  border-bottom: 2px solid #F4BD37;
+  font-family: Graduate-Regular, Arial, sans-serif;
+  width: 100%;  /* Sørger for at h1 fylder hele bredden */
+  margin: 0;  /* Fjerner margin omkring h1 */
+  margin-top: 4%;
+}
+
+.top-section {
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.top-section h1 {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 1rem 0;
+  border-top: 2px solid #F4BD37;
+  border-bottom: 2px solid #F4BD37;
+  font-family: Graduate-Regular, Arial, sans-serif;
+  margin-left: -10%;
+  margin-right: -10%;
+  width: calc(100% + 20%);
+}
+.text-content ul {
+  padding-bottom: 2%;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 3%;
+  align-items: flex-start;
+  margin-top: 1.5rem;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.text-content ul {
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
+.text-content ul li {
+  padding-bottom: 2%;
+}
+
+.image-content {
+  flex: 1;
+  text-align: center;
+}
+
+.image-content img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 5px;
+  margin-left: 9%;
+}
+
+.middle-section {
+  margin-top: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.middle-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+/* New CSS for text boxes */
+.text-boxes {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse; /* Bakker layoutet om, så første boks vises til højre */
+  gap: 1rem; /* Giver lidt afstand mellem de to bokse */
+  margin-top: 2rem;
+}
+
+.text-box {
+  background-color: #F4BD37; /* Yellow background */
+  color: black; /* Black text */
+  padding: 1rem;
+  border-radius: 5px;
+  flex: 1; /* Sikrer, at begge bokse fylder lige meget */
+  margin-bottom: 3%;
+}
+
+.text-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.text-box p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.padding-top {
+  padding-top: 1rem; /
+}
+.padding-left{
+  padding-left: 3%;
+}
+.text-content ul li {
+    padding-bottom: 2%;
+  }
+
+@media (max-width: 991px) {
+  body {
+      margin-left: 5%;
+      margin-right: 5%;
+  }
+  aside h1 {
+    margin-top: 20%;
+  }
+
+  .content-container {
+      flex-direction: column;
+      gap: 1rem;
+  }
+
+
+  .text-content ul {
+      padding-left: 3%;
+  }
+  .text-content ul li {
+    padding-bottom: 2%;
+  }
+
+  .image-content img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 5px;
+    margin-left: 0%;
+  }
+  .text-boxes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
