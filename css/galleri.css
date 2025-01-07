@@ -59,14 +59,14 @@
     transform: translateX(-50%); /* Justerer for at centrere på skærmen */
     font-family: Graduate-Regular;
     font-size: xx-large;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 
 .socialt {
     font-size: 1rem;
     font-weight: 100;
-    padding-top: 10px;
+    padding-top: 15px;
     margin: 10px 20px;
     line-height: 1.5;
     margin-left: 10px;
@@ -89,7 +89,7 @@
     max-width: 1200px; /* Sætter en maks. bredde */
     margin: 0 auto; /* Centrerer indholdet */
     position: relative; /* Bevarer layout */
-    padding-bottom: 35px;
+    padding-bottom: 40px;
     padding-top: 5px;
 }
 
@@ -100,10 +100,21 @@
 
 .mere-info {
     border-top: 2px solid #f4bd37; /* Gul streg */
-    width: 80%; /* Juster bredden af den gule streg */
-    margin: 0 auto; /* Centrerer stregen */
-    padding-bottom: 10px; /* Giver afstand under stregen */
+    width: 100%; /* Fylder hele bredden af containeren */
+    max-width: 80vw; /* Begrænser bredden af den gule streg til 80% af skærmens bredde */
+    margin: 0 auto; /* Centrerer elementet */
+    padding-bottom: 5px; /* Giver afstand under stregen */
+    box-sizing: border-box; /* Sørger for, at padding ikke påvirker bredden */
+    font-size: 2rem; /* Øger tekststørrelsen */
+    line-height: 1.5; /* Justerer linjeafstanden for bedre læsbarhed */
+    text-align: center; /* Centrerer teksten */
 }
+
+
+
+
+
+
 
 
 .indblik {
@@ -117,27 +128,6 @@
     font-family: Arial, sans-serif;
     font-size: 1rem;
 }
-
-/* Tilmeldingsknap */
-/*.spillerbtn {
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: #101110b6;
-    color: white;
-    font-size: 20px;
-    padding: 12px 50px;
-    border-color: #F4BD37;
-    cursor: pointer;
-    border-radius: 2px;
-    margin-top: 45px;
-  }
-  
-  .spillerbtn:hover {
-    background-color: black;
-  }*/
 
 /* Containeren til galleriet */
 .opsaetning {
@@ -173,3 +163,37 @@
     overflow: hidden; 
     aspect-ratio: 3 / 4; /* Forholder sig til en bestemt højde-bredde-ratio */
 }
+
+.instagram-handle {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    padding-bottom: 27px;
+  }
+
+  /* Responsiv til mobil */
+  @media screen and (max-width: 600px) {
+    .junior-head img {
+      width: 100%;
+      height: auto;
+    }
+    .velkommen {
+      font-size: x-small;
+    }
+    .socialt {
+      font-size: 0.8rem;
+    }
+    .indblik {
+      font-size: 0.8rem;
+    }
+    .instagram-handle {
+      font-size: 0.8rem;
+    }
+    .opsaetning {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+    }
+  }
+
+/* Responsiv til tablet */
