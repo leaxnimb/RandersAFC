@@ -141,7 +141,7 @@ p {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        padding: 200px 0px 300px 20px;
+        padding: 100px 0px 100px 20px;
         margin: 80px 5px 20px 5px;
         background: url('../img/kontakt-bg.webp') no-repeat center center;
         background-size: cover;

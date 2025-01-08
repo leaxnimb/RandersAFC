@@ -160,3 +160,40 @@ p {
     
     line-height: 2rem;
   }
+
+  @media (max-width: 991px) {
+    .coaches {
+        flex-direction: column; /* Vertikalt layout */
+        align-items: center; /* Centrerer billederne */
+        gap: 3rem; /* Tilføjer spacing mellem billederne */
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .polaroid {
+        margin: 0; /* Ingen ekstra margin på individuelle kort */
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
