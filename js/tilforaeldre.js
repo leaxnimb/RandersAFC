@@ -1,31 +1,48 @@
-// Tilføj tekstindhold dynamisk
-const textContent = document.querySelector('.text-content');
-textContent.innerHTML = `
-  <p>
-    Vi er glade for, at I overvejer at lade jeres barn blive en del af RanderAFC.
-    Hos os lægger vi vægt på fællesskab, sportsglæde og udvikling, både på og uden for banen.
-    Amerikansk fodbold er en sport for alle – uanset alder, størrelse eller erfaring.
-  </p>
-  <ul>
-    <li>Professionel træning i en tryg og sjov atmosfære.</li>
-    <li>Et stærkt fællesskab med nye venner.</li>
-    <li>Mulighed for personlig udvikling gennem teamwork og målrettet indsats.</li>
-  </ul>
-  <p>
-    Læs videre for at lære mere om, hvad vi tilbyder, og hvordan I tilmelder jeres barn til vores klub!
-  </p>
-`;
+"use strict";
 
-// Tilføj billede øverst dynamisk
-const topImage = document.getElementById('top-image');
-topImage.src = '../img/smil.webp'; // Sørg for at stien til billedet er korrekt
-topImage.alt = 'Amerikansk fodbold situation';
+// Hent JSON-filen fra serveren
+fetch('../json/jsondata.json')
+    .then(response => {
+        // Tjek om svaret er OK (200-statuskode)
+        if (!response.ok) {
+            // Hvis der er et problem med netværket, kast en fejl
+            throw new Error('Network response was not ok: ' + response.statusText);
+        }
+        // Konverter svaret til JSON-format
+        return response.json();
+    })
+    .then(data => {
+        // Vis JSON-data i konsollen (til debugging)
+        console.log('JSON data loaded:', data);
 
-// Tilføj billede til containeren dynamisk
-const container = document.querySelector('.billedecontainer');
-const imageSrc = '../img/tilforaelregruppe.webp'; // Sørg for at stien til billedet er korrekt
+        // Find HTML-sektionen, hvor billedet skal tilføjes
+        const middleSection = document.querySelector('.middle-section');
 
-const img = document.createElement('img');
-img.src = imageSrc;
-img.alt = 'Gruppe glade spiller';
-container.appendChild(img);
+        // Opret et nyt billede-HTML-element
+        const middleImg = document.createElement('img');
+
+        // Tjek om der er et element i data-arrayet på index 3, og om dette element har en "middleBillede"-egenskab
+        if (data[3] && data[3].middleBillede) {
+            // Hvis begge betingelser er sande &&:
+            // 1. "data[3]" eksisterer (dvs. data-arrayet har et element på index 3).
+            // 2. "middleBillede" findes i det element (dvs. "middleBillede" har en værdi, som ikke er undefined eller null).
+            // Så fortsætter vi med at hente billedet og tilføje det til siden.
+
+            middleImg.src = data[3].middleBillede; // Hent middleBillede fra JSON
+            middleImg.alt = 'Middle Billede';
+
+            // Tilføj billedet til den fundne sektion
+            middleSection.appendChild(middleImg);
+
+            // Log billedets kilde i konsollen (til debugging)
+            console.log('Billede tilføjet:', middleImg.src);
+        } else {
+            // Hvis én af betingelserne ikke er sand (f.eks. hvis data[3] ikke findes eller hvis middleBillede ikke er defineret),
+            // vis en fejl i konsollen.
+            console.error('middleBillede not found in JSON data at index 3.');
+        }
+    })
+    .catch(error => {
+        // Hvis fetch-anmodningen mislykkes, log fejl
+        console.error('Fetch failed:', error);
+    });
