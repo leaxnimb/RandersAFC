@@ -9,5 +9,8 @@
     },
     {
       "loadingGif": "../img/gif/load.gif"
+    },
+    {
+      "middleBillede": "../img/tilforaelregruppe.webp"
     }
 ]
