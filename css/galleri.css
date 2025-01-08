@@ -2,21 +2,28 @@
     font-family: Graduate-Regular;
     src: url(../fonts/Graduate-Regular.ttf);
 }
+
 #myBtn {
-    display: none; /* Gemt by default */
+    display: none;
+    /* Gemt by default */
     width: 2rem;
-    position: fixed; /* Fixed/sticky position */
+    position: fixed;
+    /* Fixed/sticky position */
     bottom: 3rem;
     right: 6rem;
-    z-index: 99; /* Justeres til front lag */
-    cursor: pointer; /* Makør ved hover */
-  }
-  
-  /*  #myBtn:hover */
-  #myBtn:hover {
-    content: url("../img/icons/skumfingergul.webp"); /* Skifter til et andet billede */
-    transform: scale(1.1); /* Gør knappen lidt større */
-  }
+    z-index: 99;
+    /* Justeres til front lag */
+    cursor: pointer;
+    /* Makør ved hover */
+}
+
+/*  #myBtn:hover */
+#myBtn:hover {
+    content: url("../img/icons/skumfingergul.webp");
+    /* Skifter til et andet billede */
+    transform: scale(1.1);
+    /* Gør knappen lidt større */
+}
 
 .galleri-info {
     display: flex;
@@ -28,17 +35,18 @@
 }
 
 .text-box {
-    text-align: center;
-    font-size: 24px; 
-    font-weight: bold; 
+    text-align: center;∏
+    font-size: 24px;
+    font-weight: bold;
     font-family: Arial, sans-serif;
-    color: black; 
-    margin: 20px auto; 
-    padding: 20px; 
+    color: black;
+    margin: 20px auto;
+    padding: 20px;
     /*background-color: transparent; /* Ingen baggrund */
     /*box-shadow: none; /* Ingen skygge */
-    border-radius: 0; /* Fjerner afrundede hjørner*/ 
-    max-width: 80%; 
+    border-radius: 0;
+    /* Fjerner afrundede hjørner*/
+    max-width: 80%;
     position: relative;
     z-index: 1;
     margin-left: 13.5rem;
@@ -47,16 +55,21 @@
 
 
 .velkommen {
-    margin: 0; 
-    padding: 10px 0; 
+    margin: 0;
+    padding: 10px 0;
     font-weight: bold;
     margin-bottom: 10px;
-    border-radius: 0; /* Fjern afrundede hjørner */
-    border-bottom: 2px solid #f4bd37; /* Styler den gule linje */
-    width: 100vw; /* Får linjen til at strække sig over hele skærmens bredde */
-    position: relative; 
-    left: 50%; /* Flytter linjen til midten */
-    transform: translateX(-50%); /* Justerer for at centrere på skærmen */
+    border-radius: 0;
+    /* Fjern afrundede hjørner */
+    border-bottom: 2px solid #f4bd37;
+    /* Styler den gule linje */
+    width: 100vw;
+    /* Får linjen til at strække sig over hele skærmens bredde */
+    position: relative;
+    left: 50%;
+    /* Flytter linjen til midten */
+    transform: translateX(-50%);
+    /* Justerer for at centrere på skærmen */
     font-family: Graduate-Regular;
     font-size: xx-large;
     padding-bottom: 20px;
@@ -76,46 +89,59 @@
 }
 
 .video {
-    display: flex; /* Sikrer fleksibel visning */
-    justify-content: center; /* Centrerer indholdet */
-    width: 100%; /* Fylder hele containerens bredde */
-    margin: 0 auto; /* Centrerer containeren */
-    padding: 0; /* Ingen ekstra mellemrum */
-    
+    display: flex;
+    /* Sikrer fleksibel visning */
+    justify-content: center;
+    /* Centrerer indholdet */
+    width: 100%;
+    /* Fylder hele containerens bredde */
+    margin: 0 auto;
+    /* Centrerer containeren */
+    padding: 0;
+    /* Ingen ekstra mellemrum */
+
 }
 
 .video-container {
-    width: 100%; /* Fylder hele bredden */
-    max-width: 1200px; /* Sætter en maks. bredde */
-    margin: 0 auto; /* Centrerer indholdet */
-    position: relative; /* Bevarer layout */
+    width: 100%;
+    /* Fylder hele bredden */
+    max-width: 1200px;
+    /* Sætter en maks. bredde */
+    margin: 0 auto;
+    /* Centrerer indholdet */
+    position: relative;
+    /* Bevarer layout */
     padding-bottom: 40px;
     padding-top: 5px;
 }
 
 #video-placeholder iframe {
-    width: 100%; /* Gør iframe tilpasset containerens bredde */
-    height: auto; /* Bevarer højden i forhold til bredden */
+    width: 100%;
+    /* Gør iframe tilpasset containerens bredde */
+    height: auto;
+    /* Bevarer højden i forhold til bredden */
 }
 
 .mere-info {
-    border-top: 2px solid #f4bd37; /* Gul streg */
-    width: 100%; /* Fylder hele bredden af containeren */
-    max-width: 80vw; /* Begrænser bredden af den gule streg til 80% af skærmens bredde */
-    margin: 0 auto; /* Centrerer elementet */
-    padding-bottom: 5px; /* Giver afstand under stregen */
-    box-sizing: border-box; /* Sørger for, at padding ikke påvirker bredden */
-    font-size: 2rem; /* Øger tekststørrelsen */
-    line-height: 1.5; /* Justerer linjeafstanden for bedre læsbarhed */
-    text-align: center; /* Centrerer teksten */
+    border-top: 2px solid #f4bd37;
+    /* Gul streg */
+    width: 100%;
+    /* Fylder hele bredden af containeren */
+    max-width: 80vw;
+    /* Begrænser bredden af den gule streg til 80% af skærmens bredde */
+    margin: 0 auto;
+    /* Centrerer elementet */
+    padding-bottom: 5px;
+    /* Giver afstand under stregen */
+    box-sizing: border-box;
+    /* Sørger for, at padding ikke påvirker bredden */
+    font-size: 2rem;
+    /* Øger tekststørrelsen */
+    line-height: 1.5;
+    /* Justerer linjeafstanden for bedre læsbarhed */
+    text-align: center;
+    /* Centrerer teksten */
 }
-
-
-
-
-
-
-
 
 .indblik {
     font-size: 1rem;
@@ -132,36 +158,43 @@
 /* Containeren til galleriet */
 .opsaetning {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tre kolonner i galleriet */
-    gap: 20px; 
-    max-width: 1200px; 
-    margin: 0 auto; /* Centrerer galleriet */
-    padding: 20px; 
+    grid-template-columns: repeat(3, 1fr);
+    /* Tre kolonner i galleriet */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Centrerer galleriet */
+    padding: 20px;
     margin-bottom: 10px;
-    margin-left: 5rem;
+    margin-left: 4rem;
     margin-right: 5rem;
 }
 
 /* Styling af billederne */
 .opsaetning img {
-    max-width: 100%; /* Billedet fylder maksimalt sin container */
-    height: auto; 
-    object-fit: cover; /* Fylder billedet pænt inden for containeren */
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s ease; /* Effekt ved hover */
+    max-width: 100%;
+    /* Billedet fylder maksimalt sin container */
+    height: auto;
+    object-fit: cover;
+    /* Fylder billedet pænt inden for containeren */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    /* Effekt ved hover */
 }
 
 /* Effekter ved hover */
 .opsaetning img:hover {
-    transform: scale(1.05); /* Zoomer billedet en smule ind */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05);
+    /* Zoomer billedet en smule ind */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Ekstra styling til billedcontainer */
 .opsaetning-item {
-    overflow: hidden; 
-    aspect-ratio: 3 / 4; /* Forholder sig til en bestemt højde-bredde-ratio */
+    overflow: hidden;
+    aspect-ratio: 3 / 4;
+    /* Forholder sig til en bestemt højde-bredde-ratio */
 }
 
 .instagram-handle {
@@ -170,30 +203,35 @@
     color: #555;
     text-align: center;
     padding-bottom: 27px;
-  }
+}
 
-  /* Responsiv til mobil */
-  @media screen and (max-width: 600px) {
+/* Responsiv til mobil */
+@media screen and (max-width: 600px) {
     .junior-head img {
-      width: 100%;
-      height: auto;
+        width: 100%;
+        height: auto;
     }
+
     .velkommen {
-      font-size: x-small;
+        font-size: x-small;
     }
+
     .socialt {
-      font-size: 0.8rem;
+        font-size: 0.8rem;
     }
+
     .indblik {
-      font-size: 0.8rem;
+        font-size: 0.8rem;
     }
+
     .instagram-handle {
-      font-size: 0.8rem;
+        font-size: 0.8rem;
     }
+
     .opsaetning {
-      grid-template-columns: repeat(1, 1fr);
-      gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
     }
-  }
+}
 
 /* Responsiv til tablet */
