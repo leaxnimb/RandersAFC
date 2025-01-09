@@ -99,7 +99,6 @@
     /* Centrerer containeren */
     padding: 0;
     /* Ingen ekstra mellemrum */
-
 }
 
 .video-container {
@@ -113,6 +112,8 @@
     /* Bevarer layout */
     padding-bottom: 40px;
     padding-top: 5px;
+    border-bottom: 2px solid #f4bd37;
+    /* Gul streg */
 }
 
 #video-placeholder iframe {
@@ -123,24 +124,11 @@
 }
 
 .mere-info {
-    border-top: 2px solid #f4bd37;
-    /* Gul streg */
-    width: 100%;
-    /* Fylder hele bredden af containeren */
-    max-width: 80vw;
-    /* Begrænser bredden af den gule streg til 80% af skærmens bredde */
-    margin: 0 auto;
-    /* Centrerer elementet */
-    padding-bottom: 5px;
-    /* Giver afstand under stregen */
-    box-sizing: border-box;
-    /* Sørger for, at padding ikke påvirker bredden */
-    font-size: 2rem;
-    /* Øger tekststørrelsen */
-    line-height: 1.5;
-    /* Justerer linjeafstanden for bedre læsbarhed */
-    text-align: center;
-    /* Centrerer teksten */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5px;
 }
 
 .indblik {
@@ -166,8 +154,13 @@
     /* Centrerer galleriet */
     padding: 20px;
     margin-bottom: 10px;
-    margin-left: 4rem;
+    margin-left: 5rem;
     margin-right: 5rem;
+}
+
+.opsaetning-container {
+    display: flex;
+    justify-content: center;
 }
 
 /* Styling af billederne */

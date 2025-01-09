@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,14 +7,15 @@
 }
 
 body {
-    padding-top: 80px; /* Juster denne værdi til højden af din header */
+    padding-top: 80px;
+    /* Juster denne værdi til højden af din header */
 }
 
 
 /*Definerer font*/
 @font-face {
-  font-family: Graduate-Regular;
-  src: url(../fonts/Graduate-Regular.ttf);
+    font-family: Graduate-Regular;
+    src: url(../fonts/Graduate-Regular.ttf);
 }
 
 /* indsætter font */
@@ -29,7 +30,7 @@ p {
 
 }
 
-.tekst{
+.tekst {
     margin-left: 13.5rem;
     margin-right: 13.5rem;
     line-height: 2;
@@ -39,11 +40,16 @@ p {
 .decorated-text {
     text-align: center;
     position: relative;
-    font-size: 24px; /* Tekststørrelse */
-    font-weight: bold; /* Gør teksten fed */
-    color: black; /* Tekstfarve */
-    margin: 20px 0; /* Afstand til andre elementer */
-    padding: 20px ; /* Plads omkring teksten */
+    font-size: 24px;
+    /* Tekststørrelse */
+    font-weight: bold;
+    /* Gør teksten fed */
+    color: black;
+    /* Tekstfarve */
+    margin: 20px 0;
+    /* Afstand til andre elementer */
+    padding: 20px;
+    /* Plads omkring teksten */
 }
 
 .decorated-text::before,
@@ -52,20 +58,24 @@ p {
     position: absolute;
     left: 0;
     right: 0;
-    height: 2px; /* Tykkelse på linjerne */
-    background-color: gold; /* Gul farve på linjerne */
+    height: 2px;
+    /* Tykkelse på linjerne */
+    background-color: gold;
+    /* Gul farve på linjerne */
 }
 
 .decorated-text::before {
-    top: 0; /* Øverste linje */
+    top: 0;
+    /* Øverste linje */
 }
 
 .decorated-text::after {
-    bottom: 0; /* Nederste linje */
+    bottom: 0;
+    /* Nederste linje */
 }
 
 /* h2 */
-#h2{
+#h2 {
     font-family: Graduate-Regular;
     font-size: x-large;
     margin-top: 8rem;
@@ -76,19 +86,25 @@ p {
 /* scroll to top knap */
 
 #myBtn {
-    display: none; /* Gemt by default */
+    display: none;
+    /* Gemt by default */
     width: 2rem;
-    position: fixed; /* Fixed/sticky position */
-    bottom: 3rem; 
-    right: 6rem; 
-    z-index: 99; /* Justeres til front lag */
-    cursor: pointer; /* Makør ved hover */
-  }
-  
- /*  #myBtn:hover */
- #myBtn:hover {
-  content: url("../img/icons/skumfingergul.webp"); /* Skifter til et andet billede */
-  transform: scale(1.1); /* Gør knappen lidt større */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 3rem;
+    right: 6rem;
+    z-index: 99;
+    /* Justeres til front lag */
+    cursor: pointer;
+    /* Makør ved hover */
+}
+
+/*  #myBtn:hover */
+#myBtn:hover {
+    content: url("../img/icons/skumfingergul.webp");
+    /* Skifter til et andet billede */
+    transform: scale(1.1);
+    /* Gør knappen lidt større */
 }
 
 
@@ -102,7 +118,7 @@ p {
 
 .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     padding-left: 2%;
@@ -111,13 +127,13 @@ p {
     margin-right: 13.5rem;
 }
 
-.container p{
+.container p {
     line-height: 2;
 }
 
 
 /* træner section style */
-.coaches{
+.coaches {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -134,66 +150,61 @@ p {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 25px;
     padding: 1rem;
-  }
+}
 
-  #venstre{
+#venstre {
     margin-right: 2%;
-  }
+}
 
-  #midt{
+#midt {
     margin-left: 1%;
     margin-right: 1%;
-  }
+}
 
-  #højre{
+#højre {
     margin-left: 2%;
-  }
+}
 
-  .intro{
+.intro {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 1rem;
-  }
+}
 
-  .intro p{
-    
+.intro p {
+
     line-height: 2rem;
-  }
+}
 
-  @media (max-width: 991px) {
+@media (max-width: 991px) {
     .coaches {
-        flex-direction: column; /* Vertikalt layout */
-        align-items: center; /* Centrerer billederne */
-        gap: 3rem; /* Tilføjer spacing mellem billederne */
+        flex-direction: column;
+        /* Vertikalt layout */
+        align-items: center;
+        /* Centrerer billederne */
+        gap: 3rem;
+        /* Tilføjer spacing mellem billederne */
         margin-left: 1rem;
         margin-right: 1rem;
     }
 
     .polaroid {
-        margin: 0; /* Ingen ekstra margin på individuelle kort */
+        margin: 0;
+        /* Ingen ekstra margin på individuelle kort */
         align-items: center;
     }
+
+    #højre {
+        margin-left: 0;
+    }
+
+    #venstre {
+        margin-right: 0;
+    }
+
+    #midt {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
