@@ -110,10 +110,11 @@ p {
 
 /* første section */
 
-.bstrman {
+/*.bstrman {
     width: 100%;
     padding-right: 5%;
     padding-top: 2%;
+    justify-content: left;
 }
 
 .container {
@@ -129,7 +130,62 @@ p {
 
 .container p {
     line-height: 2;
+}*/
+
+/*
+.bstrman {
+    width: 150px; 
+    height: auto; 
+    margin-right: 20px; 
+    padding: 0; 
+    justify-content: flex-start; 
 }
+
+.container {
+    display: flex; 
+    flex-direction: row; 
+    align-items: flex-start; 
+    margin-top: 5rem;
+    margin-left: 13.5rem;
+    margin-right: 13.5rem;
+}
+
+.container p {
+    line-height: 2;
+    flex: 1; 
+}
+*/
+
+.container {
+    padding-left: 2%;
+    margin-top: 5rem;
+    margin-left: 13.5rem;
+    margin-right: 13.5rem;
+}
+
+.container h2 {
+    margin-bottom: 20px; 
+}
+
+.bstr-container {
+    display: flex; 
+    align-items: flex-start; 
+    gap: 20px; 
+}
+
+.bstrman {
+    width: 150px; 
+    height: auto; 
+}
+
+.bstr-text {
+    flex: 1; 
+}
+
+.bstr-text p {
+    line-height: 2;
+}
+
 
 
 /* træner section style */
