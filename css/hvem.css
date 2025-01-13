@@ -163,27 +163,31 @@ p {
     margin-right: 13.5rem;
 }
 
-.container h2 {
-    margin-bottom: 20px; 
-}
-
 .bstr-container {
-    display: flex; 
-    align-items: flex-start; 
-    gap: 20px; 
+    display: flex; /* Placerer billedet og teksten side om side */
+    align-items: flex-start; /* Justerer billedet og teksten, så deres toppe alignes */
+    gap: 20px; /* Tilføjer mellemrum mellem billedet og teksten */
 }
 
 .bstrman {
-    width: 150px; 
-    height: auto; 
+    width: 250px; /* Gør billedet større */
+    height: auto; /* Bevarer billedets proportioner */
+    margin: 0; /* Fjerner utilsigtet margin på billedet */
 }
 
 .bstr-text {
-    flex: 1; 
+    flex: 1; /* Sørger for, at teksten fylder resten af pladsen */
+}
+
+.bstr-text h2 {
+    margin: 0; /* Fjerner al ekstra margin på overskriften */
+    margin-bottom: 10px; /* Lidt plads under overskriften */
+    line-height: 1.2; /* Justerer linjehøjden */
 }
 
 .bstr-text p {
-    line-height: 2;
+    line-height: 1.8; /* Forbedrer læsbarheden af teksten */
+    margin: 0; /* Sørger for, at der ikke er utilsigtet vertikal forskydning */
 }
 
 
