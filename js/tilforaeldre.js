@@ -29,7 +29,7 @@ fetch('../json/jsondata.json')
             // Så fortsætter vi med at hente billedet og tilføje det til siden.
 
             middleImg.src = data[3].middleBillede; // Hent middleBillede fra JSON
-            middleImg.alt = 'Middle Billede';
+            middleImg.alt = 'Glade spiller';
 
             // Tilføj billedet til den fundne sektion
             middleSection.appendChild(middleImg);
