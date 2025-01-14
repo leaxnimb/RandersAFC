@@ -34,6 +34,15 @@ p {
     margin-left: 13.5rem;
     margin-right: 13.5rem;
     line-height: 2;
+    margin-bottom: 4rem;
+}
+
+section .container{
+    margin-left: 13rem;
+}
+
+.bstr-text p{
+        padding-right: 13rem;
 }
 
 /* h1 + h2 */
