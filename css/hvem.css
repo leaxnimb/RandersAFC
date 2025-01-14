@@ -107,86 +107,32 @@ p {
     /* Gør knappen lidt større */
 }
 
-
-/* første section */
-
-/*.bstrman {
-    width: 100%;
-    padding-right: 5%;
-    padding-top: 2%;
-    justify-content: left;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding-left: 2%;
-    margin-top: 5rem;
-    margin-left: 13.5rem;
-    margin-right: 13.5rem;
-}
-
-.container p {
-    line-height: 2;
-}*/
-
-/*
-.bstrman {
-    width: 150px; 
-    height: auto; 
-    margin-right: 20px; 
-    padding: 0; 
-    justify-content: flex-start; 
-}
-
-.container {
-    display: flex; 
-    flex-direction: row; 
-    align-items: flex-start; 
-    margin-top: 5rem;
-    margin-left: 13.5rem;
-    margin-right: 13.5rem;
-}
-
-.container p {
-    line-height: 2;
-    flex: 1; 
-}
-*/
-
-.container {
-    padding-left: 2%;
-    margin-top: 5rem;
-    margin-left: 13.5rem;
-    margin-right: 13.5rem;
-}
-
-.container h2 {
-    margin-bottom: 20px; 
-}
-
 .bstr-container {
-    display: flex; 
-    align-items: flex-start; 
-    gap: 20px; 
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 .bstrman {
-    width: 150px; 
-    height: auto; 
+    width: 250px;
+    height: auto;
+    margin: 0;
 }
 
 .bstr-text {
-    flex: 1; 
+    flex: 1;
+}
+
+.bstr-text h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    line-height: 1.2;
 }
 
 .bstr-text p {
-    line-height: 2;
+    line-height: 1.8;
+    margin: 0;
 }
-
-
 
 /* træner section style */
 .coaches {
@@ -262,5 +208,20 @@ p {
     #midt {
         margin-left: 0;
         margin-right: 0;
+    }
+
+    .bstr-container {
+        flex-direction: column-reverse;
+        /* Skifter rækkefølgen til Bestyrelsen → billede → paragraf */
+    }
+
+    .bstrman {
+        width: 100%;
+        /* Billedet fylder hele bredden */
+    }
+
+    .bstr-text {
+        margin-top: 20px;
+        /* Skubber teksten ned under billedet */
     }
 }
