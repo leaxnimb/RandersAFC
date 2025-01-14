@@ -54,7 +54,7 @@ p {
 
 .kontakt-formular,
 .kontakt-info {
-    position: relative; /* Keeps these elements above the overlay */
+    position: relative; /* fremhæv formular */
     z-index: 2;
 }
 
